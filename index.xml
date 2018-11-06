@@ -1,15 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My New Hugo Site</title>
-    <link>http://example.org/</link>
-    <description>Recent content on My New Hugo Site</description>
+    <title>Shun Kosaka</title>
+    <link>http://shunkosa.github.io/</link>
+    <description>Recent content on Shun Kosaka</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Sun, 04 Nov 2018 22:58:12 +0900</lastBuildDate>
+    
+        <atom:link href="http://shunkosa.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
-      <atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
-    
+    <item>
+      <title>Archives</title>
+      <link>http://shunkosa.github.io/archives/</link>
+      <pubDate>Sun, 04 Nov 2018 22:58:12 +0900</pubDate>
+      
+      <guid>http://shunkosa.github.io/archives/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>
