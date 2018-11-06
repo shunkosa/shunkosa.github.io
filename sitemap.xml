@@ -3,23 +3,34 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://shunkosa.github.io/archives/</loc>
+    <loc>https://shunkosa.github.io/archives/</loc>
     <lastmod>2018-11-04T22:58:12+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://shunkosa.github.io/categories/</loc>
+    <loc>https://shunkosa.github.io/posts/recreate-modal-lightning-action/</loc>
+    <lastmod>2017-12-12T21:18:40+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://shunkosa.github.io/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://shunkosa.github.io/</loc>
+    <loc>https://shunkosa.github.io/posts/</loc>
+    <lastmod>2017-12-12T21:18:40+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://shunkosa.github.io/</loc>
     <lastmod>2018-11-04T22:58:12+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://shunkosa.github.io/tags/</loc>
+    <loc>https://shunkosa.github.io/tags/</loc>
     <priority>0</priority>
   </url>
   

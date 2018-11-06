@@ -1,24 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Shun Kosaka</title>
-    <link>https://shunkosa.github.io/</link>
-    <description>Recent content on Shun Kosaka</description>
+    <title>Posts on Shun Kosaka</title>
+    <link>https://shunkosa.github.io/posts/</link>
+    <description>Recent content in Posts on Shun Kosaka</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 04 Nov 2018 22:58:12 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 12 Dec 2017 21:18:40 +0900</lastBuildDate>
     
-        <atom:link href="https://shunkosa.github.io/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://shunkosa.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Archives</title>
-      <link>https://shunkosa.github.io/archives/</link>
-      <pubDate>Sun, 04 Nov 2018 22:58:12 +0900</pubDate>
-      
-      <guid>https://shunkosa.github.io/archives/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>Recreate modal component for force:lightningQuickActionWithoutHeader</title>
