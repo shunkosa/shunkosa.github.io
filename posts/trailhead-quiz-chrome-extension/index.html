@@ -4,20 +4,20 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
-	<title>Recreate Modal Component for force:lightningQuickActionWithoutHeader</title>
+	<title>Google Chrome Extension to Copy Trailhead Quiz Easily</title>
 	
 	<meta name="description" content="">
 	<meta name="image" content="">
 	
-	<meta itemprop="name" content="Recreate Modal Component for force:lightningQuickActionWithoutHeader">
+	<meta itemprop="name" content="Google Chrome Extension to Copy Trailhead Quiz Easily">
 	<meta itemprop="description" content="">
 	<meta itemprop="image" content="">
 	
-	<meta name="og:title" content="Recreate Modal Component for force:lightningQuickActionWithoutHeader">
+	<meta name="og:title" content="Google Chrome Extension to Copy Trailhead Quiz Easily">
 	<meta name="og:description" content="">
 	
-	<meta name="og:url" content="https://shunkosa.github.io/posts/recreate-modal-lightning-action/">
-	<meta name="og:site_name" content="Recreate Modal Component for force:lightningQuickActionWithoutHeader">
+	<meta name="og:url" content="https://shunkosa.github.io/posts/trailhead-quiz-chrome-extension/">
+	<meta name="og:site_name" content="Google Chrome Extension to Copy Trailhead Quiz Easily">
 	<meta name="og:type" content="article">
 	
 	<meta name="article:tag" content="">
@@ -113,71 +113,20 @@
 
 
 <div class="content">
-  <h1>Recreate Modal Component for force:lightningQuickActionWithoutHeader</h1>
+  <h1>Google Chrome Extension to Copy Trailhead Quiz Easily</h1>
   <aside></aside>
-  <p>
+  <p><p>Recently I created a simple chrome extension which shows Trailhead quiz in a plain text format. You can easily copy and paste Trailhead quiz by this extension.</p>
 
-<h2 id="intro">Intro</h2>
+<p><img src="../img/20180730_1.png" alt="" /></p>
 
-<p>Lightning component action is a handy option to create custom function called from record detail page. We can launch a lightning component from a custom action by just implementing either <code>force:lightningQuickAction</code> or <code>force:lightningQuickActionWithoutHeader</code>. However, lightning component action has serious user interface problems. I will introduce them and propose a workaround.</p>
+<p>Download the source code in <a href="https://github.com/shunkosa/trailhead-quiz-chrome-extension">my repository</a> and <a href="https://github.com/shunkosa/trailhead-quiz-chrome-extension">load unpacked extension</a>.</p>
 
-<h2 id="problems">Problems</h2>
-
-<p>A component implemented force:lightningQuickAction is shown on the auto-created modal and its header and footer are outside of the component. So we can neither customize the header text nor put an another button next to the cancel button on the footer.
-<img src="../img/20171212181307.png" alt="" /></p>
-
-<p>It&rsquo;s a natural to think about recreating everything in a component implemented force:lightningQuickActionWithoutHeader. However, it has another problem. Extra margin is generated.
-<img src="../img/20171212181318.png" alt="" /></p>
-
-<h2 id="workaround">Workaround</h2>
-
-<p><strong>Notice: The following workaround is not compatible with Salesforce mobile and not available for API version 42.0 or later.</strong></p>
-
-<p>We can overwrite the style of the auto-created modal by inline CSS to disable extra margin. Another possibility is calling a custom modal from lightning:button tag but it requires you to recreate a highlight panel and it would be a tough work.</p>
-
-<pre><code>.cuf-content{
-    padding:0 !important;
-}
-.slds-p-around--medium{
-    padding:0 !important;
-}
-.slds-modal__content{
-    overflow-y:hidden !important;
-    height:unset !important;
-    max-height:unset !important;
-}
-</code></pre>
-
-<p><img src="../img/20171212181336.png" alt="" /></p>
-
-<p>Now we get a modal which is similar to standard action.
-<img src="../img/20171212181350.png" alt="" /></p>
-
-<h2 id="reusable-component">Reusable component</h2>
-
-<p>I created a template modal component which can be used in a component implemented force:lightningQuickActionWithoutHeader. It is available on <a href="https://github.com/shunkosa/lightningaction-modal">this repository</a>.</p>
-
-<h2 id="usage">Usage</h2>
-
-<pre><code>&lt;aura:component implements=&quot;force:lightningQuickActionWithoutHeader&quot;&gt;
-	&lt;c:LightningActionModal title=&quot;Hello world!&quot; percentWidth=&quot;85&quot; bodyHeight=&quot;300&quot;&gt;
-        //awesome modal body
-        &lt;aura:set attribute=&quot;footer&quot;&gt;
-            &lt;lightning:button label=&quot;Cancel&quot; variant=&quot;neutral&quot;/&gt;
-            &lt;lightning:button label=&quot;Save&quot; variant=&quot;brand&quot; /&gt;
-        &lt;/aura:set&gt;
-    &lt;/c:LightningActionModal&gt;
-&lt;/aura:component&gt;
-</code></pre>
-
-<h2 id="appendix">Appendix</h2>
-
-<p><a href="https://salesforce.stackexchange.com/questions/160535/add-button-to-the-footer-of-a-lightning-quick-action-component">Add button to the footer of a Lightning Quick Action component - Salesforce Stack Exchange</a></p>
+<p>Have fun and blaze your trail!</p>
 </p>
 </div>
 
 
-  <p>Written on Dec 12, 2017.</p>
+  <p>Written on Jul 30, 2018.</p>
 
 
 <footer>

@@ -21,7 +21,23 @@
     </item>
     
     <item>
-      <title>Recreate modal component for force:lightningQuickActionWithoutHeader</title>
+      <title>Google Chrome Extension to Copy Trailhead Quiz Easily</title>
+      <link>https://shunkosa.github.io/posts/trailhead-quiz-chrome-extension/</link>
+      <pubDate>Mon, 30 Jul 2018 23:22:48 +0900</pubDate>
+      
+      <guid>https://shunkosa.github.io/posts/trailhead-quiz-chrome-extension/</guid>
+      <description>&lt;p&gt;Recently I created a simple chrome extension which shows Trailhead quiz in a plain text format. You can easily copy and paste Trailhead quiz by this extension.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;../img/20180730_1.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Download the source code in &lt;a href=&#34;https://github.com/shunkosa/trailhead-quiz-chrome-extension&#34;&gt;my repository&lt;/a&gt; and &lt;a href=&#34;https://github.com/shunkosa/trailhead-quiz-chrome-extension&#34;&gt;load unpacked extension&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Have fun and blaze your trail!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Recreate Modal Component for force:lightningQuickActionWithoutHeader</title>
       <link>https://shunkosa.github.io/posts/recreate-modal-lightning-action/</link>
       <pubDate>Tue, 12 Dec 2017 21:18:40 +0900</pubDate>
       
