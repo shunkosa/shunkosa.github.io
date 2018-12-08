@@ -86,7 +86,6 @@ header {
 
 h2,
 h3,
-h4,
 h5,
 h6 {
 	line-height: 1.35;
@@ -280,9 +279,15 @@ pre {
 	vertical-align: text-bottom;
 }
 
+figure {
+	margin-top:15px;
+	margin-bottom:10px;
+}
+
 figure, twitter-widget {
 	text-align: center;
-	margin: 0 auto;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 figcaption {
