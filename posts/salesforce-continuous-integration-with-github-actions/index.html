@@ -132,7 +132,7 @@
 <li>Create a scratch org</li>
 <li>Push source</li>
 <li>Run Apex tests</li>
-<li>Comment the org login url on the thread. (NOTICE: Don&rsquo;t do this in public repos)</li>
+<li>Comment the org login url to the thread. (NOTICE: Don&rsquo;t do this in public repos)</li>
 </ul>
 
 <h2 id="initial-setup">Initial setup</h2>
@@ -141,7 +141,7 @@
 
 <h2 id="save-secrets">Save secrets</h2>
 
-<p>Store the consumer key of connected app as <code>SALESFORCE_CONSUMER_KEY</code> to repository secret. I also store secret key directly as <code>SALESFORCE_JWT_SECRET_KEY</code>. Or, you can store decryption key and IV for encrypted secret key in the repository. And store the username of DevHub as <code>SALESFORCE_DEVHUB_USERNAME</code>.</p>
+<p>Store the consumer key of connected app as <code>SALESFORCE_CONSUMER_KEY</code> to repository secret. I also store secret key directly as <code>SALESFORCE_JWT_SECRET_KEY</code>. Or, you can store the decryption key and IV for encrypted secret key in the repository. And store the username of DevHub as <code>SALESFORCE_DEVHUB_USERNAME</code>.</p>
 
 <p><img src="../img/20190825_2.png" alt="" /></p>
 
@@ -156,17 +156,19 @@
 <li>A workflow is made up of one ore more jobs. A job contains a sequence of tasks called steps. Jobs run in parallel by default and each job runs in a fresh instance. In the above workflow, for simplicity, single job named <code>build</code> runs.</li>
 <li>(line 9) : <code>checkout@master</code> runs <code>git fetch</code> and <code>git checkout $GITHUB_SHA</code>, so this action always checkouts the commit of the event trigger.</li>
 <li>(line 24) : The repository secrets are available in workflow by <code>${{ secrets.YOUR_SECRET_NAME }}</code>.</li>
-<li>(line 39) : GitHub API is used to comment to the pull request. You can use default <code>GITHUB_TOKEN</code> secret as access token. You don&rsquo;t have to generate a new token!</li>
-<li>(line 40) : <code>github</code> default context is used to specify the pull request URL. For more information, see <a href="https://help.github.com/en/articles/events-that-trigger-workflows">Events that trigger workflows</a></li>
+<li>(line 39) : GitHub API is used to comment to the pull request. You can use default <code>GITHUB_TOKEN</code> secret as access token. You don&rsquo;t have to generate a new token for CI/CD service!</li>
+<li>(line 40) : <code>github</code> default context is used to specify the pull request URL. For more information, see <a href="https://help.github.com/en/articles/events-that-trigger-workflows">Events that trigger workflows</a>.</li>
 </ul>
 
 <h2 id="see-how-it-works">See how it works</h2>
 
 <p><img src="../img/20190825_3.png" alt="" /></p>
 
+<p>Now you can easily and effectively review the pull request using the scratch org automatically created and tested.</p>
+
 <p>Next step is to delete the scratch org after the pull request is merged/closed. We need to store the org username somehow.</p>
 
-<p>I like GitHub Actions from many views. Tightly-coupled with the repository (Infinite possibilities to integrate with the repository!). Concurrency. Supporting multiple OS. Various 3rd party actions.</p>
+<p>I like GitHub Actions from many views. Tightly-coupled with the repository (infinite possibilities to integrate with the repository!). Concurrency. Supporting multiple OS. Various 3rd party actions.</p>
 
 <p>I hope more and more Salesforce developers try GitHub Actions. Share if you create an awesome action!</p>
 </p>

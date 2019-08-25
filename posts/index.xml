@@ -28,7 +28,7 @@
 &lt;li&gt;Create a scratch org&lt;/li&gt;
 &lt;li&gt;Push source&lt;/li&gt;
 &lt;li&gt;Run Apex tests&lt;/li&gt;
-&lt;li&gt;Comment the org login url on the thread. (NOTICE: Don&amp;rsquo;t do this in public repos)&lt;/li&gt;
+&lt;li&gt;Comment the org login url to the thread. (NOTICE: Don&amp;rsquo;t do this in public repos)&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&#34;initial-setup&#34;&gt;Initial setup&lt;/h2&gt;
@@ -37,7 +37,7 @@
 
 &lt;h2 id=&#34;save-secrets&#34;&gt;Save secrets&lt;/h2&gt;
 
-&lt;p&gt;Store the consumer key of connected app as &lt;code&gt;SALESFORCE_CONSUMER_KEY&lt;/code&gt; to repository secret. I also store secret key directly as &lt;code&gt;SALESFORCE_JWT_SECRET_KEY&lt;/code&gt;. Or, you can store decryption key and IV for encrypted secret key in the repository. And store the username of DevHub as &lt;code&gt;SALESFORCE_DEVHUB_USERNAME&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Store the consumer key of connected app as &lt;code&gt;SALESFORCE_CONSUMER_KEY&lt;/code&gt; to repository secret. I also store secret key directly as &lt;code&gt;SALESFORCE_JWT_SECRET_KEY&lt;/code&gt;. Or, you can store the decryption key and IV for encrypted secret key in the repository. And store the username of DevHub as &lt;code&gt;SALESFORCE_DEVHUB_USERNAME&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;../img/20190825_2.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
@@ -52,17 +52,19 @@
 &lt;li&gt;A workflow is made up of one ore more jobs. A job contains a sequence of tasks called steps. Jobs run in parallel by default and each job runs in a fresh instance. In the above workflow, for simplicity, single job named &lt;code&gt;build&lt;/code&gt; runs.&lt;/li&gt;
 &lt;li&gt;(line 9) : &lt;code&gt;checkout@master&lt;/code&gt; runs &lt;code&gt;git fetch&lt;/code&gt; and &lt;code&gt;git checkout $GITHUB_SHA&lt;/code&gt;, so this action always checkouts the commit of the event trigger.&lt;/li&gt;
 &lt;li&gt;(line 24) : The repository secrets are available in workflow by &lt;code&gt;${{ secrets.YOUR_SECRET_NAME }}&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;(line 39) : GitHub API is used to comment to the pull request. You can use default &lt;code&gt;GITHUB_TOKEN&lt;/code&gt; secret as access token. You don&amp;rsquo;t have to generate a new token!&lt;/li&gt;
-&lt;li&gt;(line 40) : &lt;code&gt;github&lt;/code&gt; default context is used to specify the pull request URL. For more information, see &lt;a href=&#34;https://help.github.com/en/articles/events-that-trigger-workflows&#34;&gt;Events that trigger workflows&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;(line 39) : GitHub API is used to comment to the pull request. You can use default &lt;code&gt;GITHUB_TOKEN&lt;/code&gt; secret as access token. You don&amp;rsquo;t have to generate a new token for CI/CD service!&lt;/li&gt;
+&lt;li&gt;(line 40) : &lt;code&gt;github&lt;/code&gt; default context is used to specify the pull request URL. For more information, see &lt;a href=&#34;https://help.github.com/en/articles/events-that-trigger-workflows&#34;&gt;Events that trigger workflows&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&#34;see-how-it-works&#34;&gt;See how it works&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&#34;../img/20190825_3.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
+&lt;p&gt;Now you can easily and effectively review the pull request using the scratch org automatically created and tested.&lt;/p&gt;
+
 &lt;p&gt;Next step is to delete the scratch org after the pull request is merged/closed. We need to store the org username somehow.&lt;/p&gt;
 
-&lt;p&gt;I like GitHub Actions from many views. Tightly-coupled with the repository (Infinite possibilities to integrate with the repository!). Concurrency. Supporting multiple OS. Various 3rd party actions.&lt;/p&gt;
+&lt;p&gt;I like GitHub Actions from many views. Tightly-coupled with the repository (infinite possibilities to integrate with the repository!). Concurrency. Supporting multiple OS. Various 3rd party actions.&lt;/p&gt;
 
 &lt;p&gt;I hope more and more Salesforce developers try GitHub Actions. Share if you create an awesome action!&lt;/p&gt;
 </description>
