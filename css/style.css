@@ -151,6 +151,10 @@ div.site-title a{
     color:#16325c;
 }
 
+div.site-title p{
+	margin-top: 0.5em;
+}
+
 div.social-icons a{
     width:20px;
     display: inline-block;
