@@ -18,7 +18,7 @@
       <guid>https://shunkosa.github.io/posts/salesforce-continuous-integration-with-github-actions/</guid>
       <description>
 
-&lt;p&gt;After 6 months in the wait list, GitHub Actions (v2) finally came to my account. It&amp;rsquo;s a built-in CI/CD service for GitHub. I quickly tested it and I found it pretty good tool for GitHub users to start CI easily.&lt;/p&gt;
+&lt;p&gt;After 6 months in the wait list, &lt;a href=&#34;https://github.com/features/actions&#34;&gt;GitHub Actions&lt;/a&gt; (v2) finally came to my account. It&amp;rsquo;s a built-in CI/CD service for GitHub. I quickly tested it and I found it pretty good tool for GitHub users to start CI easily.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;../img/20190825_1.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
