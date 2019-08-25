@@ -11,7 +11,7 @@
     
     
     <item>
-      <title>Salesforce Continuous Integration with Github Actions</title>
+      <title>Salesforce Continuous Integration with GitHub Actions</title>
       <link>https://shunkosa.github.io/posts/salesforce-continuous-integration-with-github-actions/</link>
       <pubDate>Sat, 24 Aug 2019 22:12:46 +0900</pubDate>
       
@@ -28,7 +28,7 @@
 &lt;li&gt;Create a scratch org&lt;/li&gt;
 &lt;li&gt;Push source&lt;/li&gt;
 &lt;li&gt;Run Apex tests&lt;/li&gt;
-&lt;li&gt;Comment the org login url on the thread.&lt;/li&gt;
+&lt;li&gt;Comment the org login url on the thread. (NOTICE: Don&amp;rsquo;t do this in public repos)&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&#34;initial-setup&#34;&gt;Initial setup&lt;/h2&gt;
@@ -41,7 +41,7 @@
 
 &lt;p&gt;&lt;img src=&#34;../img/20190825_2.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;define-actions&#34;&gt;Define actions&lt;/h2&gt;
+&lt;h2 id=&#34;define-workflow&#34;&gt;Define workflow&lt;/h2&gt;
 
 &lt;p&gt;Define workflow in &lt;code&gt;.github/workflows/main.yaml&lt;/code&gt;. For more information about workflow syntax, see &lt;a href=&#34;https://help.github.com/en/articles/workflow-syntax-for-github-actions&#34;&gt;Workflow Syntax for GitHub Actions&lt;/a&gt;
 &lt;script type=&#34;application/javascript&#34; src=&#34;//gist.github.com/shunkosa/905d131a96d9c8619ae039529c040b20.js&#34;&gt;&lt;/script&gt;&lt;/p&gt;
