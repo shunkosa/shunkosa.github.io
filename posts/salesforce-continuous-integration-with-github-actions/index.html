@@ -4,23 +4,23 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
-	<title>Google Chrome Extension to Copy Trailhead Quiz Easily</title>
+	<title>Salesforce Continuous Integration with Github Actions</title>
 	
 	<meta name="description" content="">
 	
 	
-	<meta itemprop="name" content="Google Chrome Extension to Copy Trailhead Quiz Easily">
+	<meta itemprop="name" content="Salesforce Continuous Integration with Github Actions">
 	<meta itemprop="description" content="">
 	
 	
-	<meta name="og:title" content="Google Chrome Extension to Copy Trailhead Quiz Easily">
+	<meta name="og:title" content="Salesforce Continuous Integration with Github Actions">
 	<meta name="og:description" content="">
 	
-	<meta name="og:url" content="https://shunkosa.github.io/posts/trailhead-quiz-chrome-extension/">
-    <meta name="og:site_name" content="Google Chrome Extension to Copy Trailhead Quiz Easily">
+	<meta name="og:url" content="https://shunkosa.github.io/posts/salesforce-continuous-integration-with-github-actions/">
+    <meta name="og:site_name" content="Salesforce Continuous Integration with Github Actions">
     <meta name="og:type" content="article">
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:url" content="https://shunkosa.github.io/posts/trailhead-quiz-chrome-extension/" />
+    <meta name="twitter:url" content="https://shunkosa.github.io/posts/salesforce-continuous-integration-with-github-actions/" />
     <meta name="twitter:site" content="@shunkosa" />
     <meta name="twitter:creator" content="@shunkosa" /> 
 	
@@ -117,20 +117,60 @@
 
 
 <div class="content">
-  <h1>Google Chrome Extension to Copy Trailhead Quiz Easily</h1>
+  <h1>Salesforce Continuous Integration with Github Actions</h1>
   <aside></aside>
-  <p><p>Recently I created a simple chrome extension which shows Trailhead quiz in a plain text format. You can easily copy and paste Trailhead quiz by this extension.</p>
+  <p>
 
-<p><img src="../img/20180730_1.png" alt="" /></p>
+<p>After 6 months in the wait list, GitHub Actions (v2) finally came to my account. It&rsquo;s a built-in CI/CD service for GitHub. I quickly tested it and I found it pretty good tool for GitHub users to start CI easily.</p>
 
-<p>The extension is <a href="https://chrome.google.com/webstore/detail/trailhead-quiz-extractor/jjnkbikhfkdfjbgleofnnelcgclcndln">available at Chrome Webstore</a>.</p>
+<p><img src="../img/20190825_1.png" alt="" /></p>
 
-<p>Have fun and blaze your trail!</p>
+<p>In this post, I&rsquo;ll show a simple example to realize continuous integration for Salesforce development. When a pull request is created, the following tasks will be automatically executed.</p>
+
+<ul>
+<li>Create a scratch org</li>
+<li>Push source</li>
+<li>Run Apex tests</li>
+<li>Comment the org login url on the thread.</li>
+</ul>
+
+<h2 id="initial-setup">Initial setup</h2>
+
+<p>Create a connected app and a private key for JWT flow. Follow the steps in the <a href="https://trailhead.salesforce.com/en/content/learn/modules/sfdx_travis_ci/sfdx_travis_ci_connected_app">Trailhead project</a>.</p>
+
+<h2 id="save-secrets">Save secrets</h2>
+
+<p>Store the consumer key of connected app as <code>SALESFORCE_CONSUMER_KEY</code> to repository secret. I also store secret key directly as <code>SALESFORCE_JWT_SECRET_KEY</code>. Or, you can store decryption key and IV for encrypted secret key in the repository. And store the username of DevHub as <code>SALESFORCE_DEVHUB_USERNAME</code>.</p>
+
+<p><img src="../img/20190825_2.png" alt="" /></p>
+
+<h2 id="define-actions">Define actions</h2>
+
+<p>Define workflow in <code>.github/workflows/main.yaml</code>. For more information about workflow syntax, see <a href="https://help.github.com/en/articles/workflow-syntax-for-github-actions">Workflow Syntax for GitHub Actions</a>
+<script type="application/javascript" src="//gist.github.com/shunkosa/905d131a96d9c8619ae039529c040b20.js"></script></p>
+
+<h3 id="highlights">Highlights</h3>
+
+<ul>
+<li>A workflow is made up of one ore more jobs. A job contains a sequence of tasks called steps. Jobs run in parallel by default and each job runs in a fresh instance. In the above workflow, for simplicity, single job named <code>build</code> runs.</li>
+<li>(line 9) : <code>checkout@master</code> runs <code>git fetch</code> and <code>git checkout $GITHUB_SHA</code>, so this action always checkouts the commit of the event trigger.</li>
+<li>(line 39) : GitHub API is used to comment to the pull request. You can use default <code>GITHUB_TOKEN</code> secret as access token. You don&rsquo;t have to generate a new token!</li>
+</ul>
+
+<h2 id="see-how-it-works">See how it works</h2>
+
+<p><img src="../img/20190825_3.png" alt="" /></p>
+
+<p>Next step is to delete the scratch org after the pull request is merged/closed. We need to store the org username somehow.</p>
+
+<p>I like GitHub Actions from many views. Tightly-coupled with the repository (Infinite possibilities to integrate with the repository!). Concurrency. Supporting multiple OS. Various 3rd party actions.</p>
+
+<p>I hope more and more Salesforce developers try GitHub Actions. Share if you create an awesome action!</p>
 </p>
 </div>
 
 
-  <p class="date">Written on Jul 30, 2018.</p>
+  <p class="date">Written on Aug 24, 2019.</p>
 
 
 <footer>

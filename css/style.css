@@ -89,8 +89,6 @@ h3,
 h5,
 h6 {
 	line-height: 1.35;
-	margin-top: .6em;
-	margin-bottom: .6em;
 }
 
 h1 {
@@ -100,19 +98,20 @@ h1 {
     color: #16325c;
 }
 
-h2 {
+h2, h3 {
+	margin-top: 1.5em;
+	margin-bottom: .6em;
 	font-family:'Salesforce Sans';
-	font-size: 1.4em;
 	font-weight: 400;
 	color: #16325c;
 }
 
-h3 {
+h2 {
 	font-size: 1.4em;
 }
 
-h4 {
-	font-size: 1.4em;
+h3 {
+	font-size: 1.2em;
 }
 
 figcaption h4 {
@@ -120,14 +119,11 @@ figcaption h4 {
 	font-weight: 300;
 }
 
-h5,
-h6 {
-	font-size: 1.2em;
-}
-
 div.content {
 	display: block;
 	padding: 1rem 0;
+	color: #5876a3;
+	font-size: 0.875rem;
 }
 
 
@@ -204,6 +200,11 @@ p {
 	line-height: 1.45;
 }
 
+p.date {
+	font-size: 0.875rem;
+	color: #3e3e3c;
+}
+
 ul,
 ol {
 	margin-bottom: 1em;
@@ -213,7 +214,6 @@ ol {
 li {
 	line-height: 1.75em;
 	margin-left: .75em;
-	list-style-type: none;
 }
 
 table {
@@ -265,14 +265,14 @@ pre {
 
 code {
 	padding: .25em .25em;
-	background: #f8f8f8;
+	background: #f3f3f3;
 	font-size: 90%;
 	margin-bottom: 20px;
 }
 
 pre {
 	font-size: .9rem;
-	background: #f8f8f8;
+	background: #f3f3f3;
 	padding: 1em;
 	margin-bottom: 20px;
 	overflow-x: auto;
