@@ -154,7 +154,9 @@
 <ul>
 <li>A workflow is made up of one ore more jobs. A job contains a sequence of tasks called steps. Jobs run in parallel by default and each job runs in a fresh instance. In the above workflow, for simplicity, single job named <code>build</code> runs.</li>
 <li>(line 9) : <code>checkout@master</code> runs <code>git fetch</code> and <code>git checkout $GITHUB_SHA</code>, so this action always checkouts the commit of the event trigger.</li>
+<li>(line 24) : The repository secrets are available in workflow by <code>${{ secrets.YOUR_SECRET_NAME }}</code>.</li>
 <li>(line 39) : GitHub API is used to comment to the pull request. You can use default <code>GITHUB_TOKEN</code> secret as access token. You don&rsquo;t have to generate a new token!</li>
+<li>(line 40) : <code>github</code> default context is used to specify the pull request URL. For more information, see <a href="https://help.github.com/en/articles/events-that-trigger-workflows">Events that trigger workflows</a></li>
 </ul>
 
 <h2 id="see-how-it-works">See how it works</h2>
