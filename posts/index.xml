@@ -5,10 +5,51 @@
     <description>Recent content in Posts on Shun Kosaka</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 24 Aug 2019 22:12:46 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 29 Aug 2019 11:14:06 +0900</lastBuildDate>
     
         <atom:link href="https://shunkosa.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Trailblazers in Korea</title>
+      <link>https://shunkosa.github.io/posts/trailblazers-in-korea/</link>
+      <pubDate>Thu, 29 Aug 2019 11:14:06 +0900</pubDate>
+      
+      <guid>https://shunkosa.github.io/posts/trailblazers-in-korea/</guid>
+      <description>&lt;p&gt;Last month I visited Korea for a Salesforce customer success conference and 1st partner summit, and I was deeply impressed by their passion for community. Some trailblazer community groups there have just started and I felt like I should help with the diamond in the rough and grow up together.&lt;/p&gt;
+
+&lt;p&gt;&lt;figure&gt;
+    &lt;img src=&#34;../img/20190828_1.jpg&#34; width=&#34;50%&#34;/&gt; &lt;figcaption&gt;
+            &lt;h4&gt;Lunch with traiblazers in Korea&lt;/h4&gt;
+        &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+    &lt;img src=&#34;../img/20190828_2.jpg&#34; width=&#34;50%&#34;/&gt; &lt;figcaption&gt;
+            &lt;h4&gt;At the Partner Summit&lt;/h4&gt;
+        &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+
+&lt;p&gt;And this month, customer case presentation competition was held in Seoul. Such events to show the success story are popular in Salesforce ecosystem, like Partner Innovation Award in Dreamforce, and the same event in Japan. On the previous trip, we could share hint/tips on community activities because we had the same worries. I think it can also apply to customer use cases. Users often have the same troubles. Scattered spreadsheets, data quality, integration, and so on. I visited Korea again to learn their practical use and get inspiration!&lt;/p&gt;
+
+&lt;p&gt;7 Trailblazers shared their success stories. They use various products and have resolved various issues. After finished, I noticed that my note had over 300 lines.&lt;/p&gt;
+
+&lt;p&gt;I reaffirmed that Salesforce was not a panacea though it&amp;rsquo;s a great product. We need to face to face with the business and technical issues in sincerity, and keep the conversations going with stakeholders, users, and customers, no matter what role you&amp;rsquo;re in. The speakers have been doing so. Through the event, I saw their tenacious and steady efforts, which are not much covered in &lt;a href=&#34;https://www.youtube.com/watch?v=Lbzt2e0fTMo&amp;amp;list=PL_zETKbWKRwSrb29Cb8eda-Dh3m9kLbCq&#34;&gt;the beautiful official videos&lt;/a&gt;. That&amp;rsquo;s why I empathize with their stories.&lt;/p&gt;
+
+&lt;p&gt;It was so hard for me to vote. Imagine you are in a luxury restaurant and all of the menus are your favorite. Essentially we cannot compare the stories. But from the view of an attendee who was also engaged in the competition in Japan, I found their stories were no less wonderful than those in Japan.&lt;/p&gt;
+
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;All done with happy. Thank you for share your story and your voice to us. I am so lucky I was able to be with you guys. &lt;a href=&#34;https://twitter.com/salesforce?ref_src=twsrc%5Etfw&#34;&gt;@salesforce&lt;/a&gt; &lt;a href=&#34;https://twitter.com/sarahahn20?ref_src=twsrc%5Etfw&#34;&gt;@sarahahn20&lt;/a&gt; &lt;a href=&#34;https://twitter.com/akikobannai?ref_src=twsrc%5Etfw&#34;&gt;@akikobannai&lt;/a&gt; &lt;a href=&#34;https://t.co/xIyCeaxQ8G&#34;&gt;pic.twitter.com/xIyCeaxQ8G&lt;/a&gt;&lt;/p&gt;&amp;mdash; Sanghyeon Hong (@to_gomsk) &lt;a href=&#34;https://twitter.com/to_gomsk/status/1166706386668941312?ref_src=twsrc%5Etfw&#34;&gt;August 28, 2019&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;Huge congratulations, Sarah and Ruby! And thank you so much ALL of the speakers for taking your time and sharing your stories. I can imagine how hard to prepare and how nervous you felt before the presentation.&lt;/p&gt;
+
+&lt;p&gt;If you want to meet passionate trailblazers and have reasonable and delicious local foods, I strongly recommend that you visit Korea. My next plan is to visit Salesforce Saturday Seoul.&lt;/p&gt;
+
+&lt;p&gt;See you soon!&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Salesforce Continuous Integration with GitHub Actions</title>
