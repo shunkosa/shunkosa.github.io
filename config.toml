@@ -1,0 +1,17 @@
+baseURL = "https://shunkosa.github.io/"
+languageCode = "en-us"
+title = "Shun Kosaka"
+theme = "koa"
+
+[params]
+ subtitle = "Tsurezuregusa on Salesforce and technology"
+
+[author]
+ twitter = "shunkosa"
+ facebook = "https://www.facebook.com/shun.kosaka"
+ github = "https://github.com/shunkosa"
+ npm = "https://www.npmjs.com/~shunkosa"
+ qiita = "https://qiita.com/shunkosa"
+ speakerdeck = "https://speakerdeck.com/shunkosa"
+ salesforce = "https://trailblazer.me/id/shunkosa"
+ gravatarEmail = "shun.kosaka@live.jp"

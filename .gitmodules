@@ -1,0 +1,3 @@
+[submodule "themes/koa"]
+	path = themes/koa
+	url = https://github.com/shunkosa/hugo-theme-koa.git
