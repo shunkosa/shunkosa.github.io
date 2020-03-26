@@ -1,0 +1,133 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Shun Kosaka</title><link>https://shunkosa.github.io/posts/</link><description>Recent content in Posts on Shun Kosaka</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 29 Aug 2019 11:14:06 +0900</lastBuildDate><atom:link href="https://shunkosa.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Trailblazers in Korea</title><link>https://shunkosa.github.io/posts/trailblazers-in-korea/</link><pubDate>Thu, 29 Aug 2019 11:14:06 +0900</pubDate><guid>https://shunkosa.github.io/posts/trailblazers-in-korea/</guid><description>&lt;p>Two months ago, I visited Korea for a Salesforce customer success conference and 1st partner summit, and I was deeply impressed by their passion for community. Some trailblazer community groups there have just started and I felt like I should help with the diamond in the rough and grow up together.&lt;/p>
+&lt;p>&lt;figure>
+&lt;img src="../img/20190828_1.jpg" width="50%"/> &lt;figcaption>
+&lt;h4>Lunch with traiblazers in Korea&lt;/h4>
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img src="../img/20190828_2.jpg" width="50%"/> &lt;figcaption>
+&lt;h4>At the Partner Summit&lt;/h4>
+&lt;/figcaption>
+&lt;/figure>
+&lt;/p>
+&lt;p>And this month, customer case presentation competition was held in Seoul. Such events to show the success story are popular in Salesforce ecosystem, like Partner Innovation Award in Dreamforce, and the same event in Japan. On the previous trip, we could share hint/tips on community activities because we had the same worries. I think it can also apply to customer use cases. Users often have the same troubles. Scattered spreadsheets, data quality, integration, and so on. I visited Korea again to learn their practical use and get inspiration!&lt;/p>
+&lt;p>7 trailblazers shared their success stories. They use various products and have resolved various issues. After finished, I noticed that my note had over 300 lines.&lt;/p>
+&lt;p>I reaffirmed that Salesforce was not a panacea though it&amp;rsquo;s a great product. We need to face to face with the business and technical issues in sincerity, and keep the conversations going with stakeholders, users, and customers, no matter what role you&amp;rsquo;re in. The speakers have been doing so. Through the event, I saw their tenacious and steady efforts, which are not much covered in &lt;a href="https://www.youtube.com/watch?v=Lbzt2e0fTMo&amp;amp;list=PL_zETKbWKRwSrb29Cb8eda-Dh3m9kLbCq">the beautiful official videos&lt;/a>. That&amp;rsquo;s why I empathize with their stories.&lt;/p>
+&lt;p>It was so hard for me to vote. Imagine you are in a luxury restaurant and all of the menus are your favorite. Essentially we cannot compare the stories. But from the view of an attendee who was also engaged in the competition in Japan, I found their stories were no less wonderful than those in Japan.&lt;/p>
+&lt;blockquote class="twitter-tweet">&lt;p lang="en" dir="ltr">All done with happy. Thank you for share your story and your voice to us. I am so lucky I was able to be with you guys. &lt;a href="https://twitter.com/salesforce?ref_src=twsrc%5Etfw">@salesforce&lt;/a> &lt;a href="https://twitter.com/sarahahn20?ref_src=twsrc%5Etfw">@sarahahn20&lt;/a> &lt;a href="https://twitter.com/akikobannai?ref_src=twsrc%5Etfw">@akikobannai&lt;/a> &lt;a href="https://t.co/xIyCeaxQ8G">pic.twitter.com/xIyCeaxQ8G&lt;/a>&lt;/p>&amp;mdash; Sanghyeon Hong (@to_gomsk) &lt;a href="https://twitter.com/to_gomsk/status/1166706386668941312?ref_src=twsrc%5Etfw">August 28, 2019&lt;/a>&lt;/blockquote>
+&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8">&lt;/script>
+&lt;p>Huge congratulations, Sarah and Ruby! And thank you so much ALL of the speakers for taking your time and sharing your stories. I can imagine how hard to prepare and how nervous you felt before the presentation.&lt;/p>
+&lt;p>If you want to meet passionate trailblazers and have reasonable and delicious local foods, I strongly recommend that you visit Korea. My next plan is to visit Salesforce Saturday Seoul.&lt;/p>
+&lt;p>See you soon!&lt;/p></description></item><item><title>Salesforce Continuous Integration with GitHub Actions</title><link>https://shunkosa.github.io/posts/salesforce-continuous-integration-with-github-actions/</link><pubDate>Sat, 24 Aug 2019 22:12:46 +0900</pubDate><guid>https://shunkosa.github.io/posts/salesforce-continuous-integration-with-github-actions/</guid><description>&lt;p>After 6 months in the wait list, &lt;a href="https://github.com/features/actions">GitHub Actions&lt;/a> (v2) finally came to my account. It&amp;rsquo;s a built-in CI/CD service for GitHub. I quickly tested it and I found it pretty good tool for GitHub users to start CI easily.&lt;/p>
+&lt;p>&lt;img src="../img/20190825_1.png" alt="">&lt;/p>
+&lt;p>In this post, I&amp;rsquo;ll show a simple example to realize continuous integration for Salesforce development. When a pull request is created, the following tasks will be automatically executed.&lt;/p>
+&lt;ul>
+&lt;li>Create a scratch org&lt;/li>
+&lt;li>Push source&lt;/li>
+&lt;li>Run Apex tests&lt;/li>
+&lt;li>Comment the org login url to the thread. (NOTICE: Don&amp;rsquo;t do this in public repos)&lt;/li>
+&lt;/ul>
+&lt;h2 id="initial-setup">Initial setup&lt;/h2>
+&lt;p>Create a connected app and a private key for JWT flow. Follow the steps in the &lt;a href="https://trailhead.salesforce.com/en/content/learn/modules/sfdx_travis_ci/sfdx_travis_ci_connected_app">Trailhead project&lt;/a>.&lt;/p>
+&lt;h2 id="save-secrets">Save secrets&lt;/h2>
+&lt;p>Store the consumer key of connected app as &lt;code>SALESFORCE_CONSUMER_KEY&lt;/code> to repository secret. I also store secret key directly as &lt;code>SALESFORCE_JWT_SECRET_KEY&lt;/code>. Or, you can store the decryption key and IV for encrypted secret key in the repository. And store the username of DevHub as &lt;code>SALESFORCE_DEVHUB_USERNAME&lt;/code>.&lt;/p>
+&lt;p>&lt;img src="../img/20190825_2.png" alt="">&lt;/p>
+&lt;h2 id="define-workflow">Define workflow&lt;/h2>
+&lt;p>Define workflow in &lt;code>.github/workflows/main.yaml&lt;/code>. For more information about workflow syntax, see &lt;a href="https://help.github.com/en/articles/workflow-syntax-for-github-actions">Workflow Syntax for GitHub Actions&lt;/a>
+&lt;script type="application/javascript" src="https://gist.github.com/shunkosa/905d131a96d9c8619ae039529c040b20.js">&lt;/script>
+&lt;/p>
+&lt;h3 id="highlights">Highlights&lt;/h3>
+&lt;ul>
+&lt;li>A workflow is made up of one ore more jobs. A job contains a sequence of tasks called steps. Jobs run in parallel by default and each job runs in a fresh instance. In the above workflow, for simplicity, single job named &lt;code>build&lt;/code> runs.&lt;/li>
+&lt;li>(line 9) : &lt;code>checkout@master&lt;/code> runs &lt;code>git fetch&lt;/code> and &lt;code>git checkout $GITHUB_SHA&lt;/code>, so this action always checkouts the commit of the event trigger.&lt;/li>
+&lt;li>(line 24) : The repository secrets are available in workflow by &lt;code>${{ secrets.YOUR_SECRET_NAME }}&lt;/code>.&lt;/li>
+&lt;li>(line 39) : GitHub API is used to comment to the pull request. You can use default &lt;code>GITHUB_TOKEN&lt;/code> secret as access token. You don&amp;rsquo;t have to generate a new token for CI/CD service!&lt;/li>
+&lt;li>(line 40) : &lt;code>github&lt;/code> default context is used to specify the pull request URL. For more information, see &lt;a href="https://help.github.com/en/articles/events-that-trigger-workflows">Events that trigger workflows&lt;/a>.&lt;/li>
+&lt;/ul>
+&lt;h2 id="see-how-it-works">See how it works&lt;/h2>
+&lt;p>&lt;img src="../img/20190825_3.png" alt="">&lt;/p>
+&lt;p>Now you can easily and effectively review the pull request using the scratch org automatically created and tested.&lt;/p>
+&lt;p>Next step is to delete the scratch org after the pull request is merged/closed. We need to store the org username somehow.&lt;/p>
+&lt;p>I like GitHub Actions from many views. Tightly-coupled with the repository (infinite possibilities to integrate with the repository!). Concurrency. Supporting multiple OS. Various 3rd party actions.&lt;/p>
+&lt;p>I hope more and more Salesforce developers try GitHub Actions. Share if you create an awesome action!&lt;/p></description></item><item><title>My #IndiaDreamin18 Highlights</title><link>https://shunkosa.github.io/posts/my-indiadreamin18-highlights/</link><pubDate>Sat, 08 Dec 2018 19:30:59 +0900</pubDate><guid>https://shunkosa.github.io/posts/my-indiadreamin18-highlights/</guid><description>&lt;p>I&amp;rsquo;ve wanted to visit India because actually I really like Indian dishes and I&amp;rsquo;m interested in the culture and people in this rapidly-growing country. After I chatted with my friends Amy and Paarth in twitter and talked with India Dreamin&amp;rsquo; organizer Vinay at MVP party in DF18, I made up my mind. This was the first time for me to attend overseas community driven event.&lt;/p>
+&lt;p>&lt;a href="http://indiadreamin.in">India Dreamin&amp;rsquo;&lt;/a> is one of the largest community driven event globally. About 1,800 trailblazers attended. The venue is the organizer&amp;rsquo;s alma mater, G.L. Bajaj, Noida.&lt;/p>
+&lt;p>&lt;figure>
+&lt;img src="../img/20181201_1.jpg" width="50%"/> &lt;figcaption>
+&lt;h4>Lively Expo!&lt;/h4>
+&lt;/figcaption>
+&lt;/figure>
+&lt;figure>
+&lt;img src="../img/20181201_2.jpg" width="50%"/> &lt;figcaption>
+&lt;h4>Biggest Hall in the venue, Ganga Hall&lt;/h4>
+&lt;/figcaption>
+&lt;/figure>
+&lt;/p>
+&lt;p>I attended a lot of amazing keynotes and sessions. I&amp;rsquo;d prefer technical session but I was paying attention to &amp;ldquo;story&amp;rdquo;, too. For exmaple, developer keynote by René was no code and no demo but it definitely motivated for developers not to be left behind the times.
+&lt;blockquote class="twitter-tweet">&lt;p lang="en" dir="ltr">“To be a successful &lt;a href="https://twitter.com/SalesforceDevs?ref_src=twsrc%5Etfw">@SalesforceDevs&lt;/a>, invest in your &lt;a href="https://twitter.com/SalesforceAdmns?ref_src=twsrc%5Etfw">@SalesforceAdmns&lt;/a> skills and become an &lt;a href="https://twitter.com/hashtag/AwesomeAdmin?src=hash&amp;amp;ref_src=twsrc%5Etfw">#AwesomeAdmin&lt;/a>!” -&lt;a href="https://twitter.com/muenzpraeger?ref_src=twsrc%5Etfw">@muenzpraeger&lt;/a> &lt;a href="https://twitter.com/hashtag/IndiaDreamin18?src=hash&amp;amp;ref_src=twsrc%5Etfw">#IndiaDreamin18&lt;/a> &lt;a href="https://t.co/lAizaTpbz0">pic.twitter.com/lAizaTpbz0&lt;/a>&lt;/p>&amp;mdash; Adam Olshansky (@adam17amo) &lt;a href="https://twitter.com/adam17amo/status/1069080021376032768?ref_src=twsrc%5Etfw">December 2, 2018&lt;/a>&lt;/blockquote>
+&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8">&lt;/script>
+And WIT Panels. A lot of attendees were inspired and encouraged by your leadership and powerful messages! I believe getting to know is the first step of mutual understanding.
+&lt;blockquote class="twitter-tweet">&lt;p lang="en" dir="ltr">Last session on &lt;a href="https://twitter.com/hashtag/indiadreamin18?src=hash&amp;amp;ref_src=twsrc%5Etfw">#indiadreamin18&lt;/a> day 1. WIT panel by @ToyaGatewood &lt;a href="https://twitter.com/SaaSy_Sistah?ref_src=twsrc%5Etfw">@SaaSy_Sistah&lt;/a> &lt;a href="https://twitter.com/Rebecca_Lammers?ref_src=twsrc%5Etfw">@Rebecca_Lammers&lt;/a> &lt;a href="https://twitter.com/lstreeter?ref_src=twsrc%5Etfw">@lstreeter&lt;/a> &lt;a href="https://t.co/GXKYSZGZrc">pic.twitter.com/GXKYSZGZrc&lt;/a>&lt;/p>&amp;mdash; Shun Kosaka (@shunkosa) &lt;a href="https://twitter.com/shunkosa/status/1068838533152960512?ref_src=twsrc%5Etfw">December 1, 2018&lt;/a>&lt;/blockquote>
+&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8">&lt;/script>
+&lt;blockquote class="twitter-tweet">&lt;p lang="en" dir="ltr">Inspiring WIT panel at &lt;a href="https://twitter.com/hashtag/indiadreamin18?src=hash&amp;amp;ref_src=twsrc%5Etfw">#indiadreamin18&lt;/a>. We all need to work together. &lt;a href="https://t.co/hPNJqrDAqi">pic.twitter.com/hPNJqrDAqi&lt;/a>&lt;/p>&amp;mdash; Shun Kosaka (@shunkosa) &lt;a href="https://twitter.com/shunkosa/status/1069127801918214144?ref_src=twsrc%5Etfw">December 2, 2018&lt;/a>&lt;/blockquote>
+&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8">&lt;/script>
+&lt;/p>
+&lt;p>In my session, I talked how wonderful Japan trailblazer community is, and how I&amp;rsquo;ve learned and grown up with them. Honestly I wondered if I should talk about my career. I&amp;rsquo;m not confident with talking about myself. I think this is because I&amp;rsquo;m always overwhelmed by trailblazers around me. But I gradually came to feel I wanted to share my thoughts about community after I took an inventory of part of my life which is effected by trailblazer community in Japan. Overall it wasn&amp;rsquo;t good talk so much, but I think it was a kind of cultural communication. Tell me more about community groups you&amp;rsquo;re engaged in!
+&lt;blockquote class="twitter-tweet">&lt;p lang="en" dir="ltr">The passion for Community shown during &lt;a href="https://twitter.com/shunkosa?ref_src=twsrc%5Etfw">@shunkosa&lt;/a> Session “How Japan &lt;a href="https://twitter.com/hashtag/Trailblazer?src=hash&amp;amp;ref_src=twsrc%5Etfw">#Trailblazer&lt;/a> Community Changed My Career” had us all Smiling🤗🤗🤗 &lt;br>Great Job my friend🙌🏽❤️🙌🏽 “Someone who gives everything, will get true everything at the end.” 🇯🇵 &lt;a href="https://twitter.com/hashtag/Tokyo?src=hash&amp;amp;ref_src=twsrc%5Etfw">#Tokyo&lt;/a> &lt;a href="https://twitter.com/hashtag/SalesforceSaturday?src=hash&amp;amp;ref_src=twsrc%5Etfw">#SalesforceSaturday&lt;/a> &lt;a href="https://twitter.com/hashtag/MenWhoLead?src=hash&amp;amp;ref_src=twsrc%5Etfw">#MenWhoLead&lt;/a> &lt;a href="https://t.co/g52tmhxNVg">pic.twitter.com/g52tmhxNVg&lt;/a>&lt;/p>&amp;mdash; Stephanie Herrera (@steph_herrera_) &lt;a href="https://twitter.com/steph_herrera_/status/1068937612709134338?ref_src=twsrc%5Etfw">December 1, 2018&lt;/a>&lt;/blockquote>
+&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8">&lt;/script>
+&lt;/p>
+&lt;p>So, what is the difference between community driven event and official event like DF? I think one is the closeness of others. You can enjoy a lot of cultural differences. Different career journeys. Incredible car traffic in India and crazy rush hour in Japan trains. And the true meaning of &amp;ldquo;user group&amp;rdquo;. In Japan, it means busines user&amp;rdquo; group, so I first thought user group doesn&amp;rsquo;t contain developer group!&lt;/p>
+&lt;p>I met a lot of amazing people here. I can&amp;rsquo;t thank you enough for everyone. Organizer Shivanath and Vinay. All the sponsors. All the speakers. My Accenture friend Seema. All the trailblazers in India. I enjoyed every minute I spent with you.
+&lt;figure>
+&lt;img src="../img/20181202.jpg"/> &lt;figcaption>
+&lt;h4>#Ohana everwhere!&lt;/h4>
+&lt;/figcaption>
+&lt;/figure>
+And much kudos core-team members and volunteers! I heard you had prepared for over 6 months. I respect your dedication and thank you so much for your hospitality.
+&lt;figure>
+&lt;img src="../img/20181201_3.jpg" width="50%"/> &lt;figcaption>
+&lt;h4>Excellent closing celemony on Day 1.&lt;/h4>
+&lt;/figcaption>
+&lt;/figure>
+&lt;/p>
+&lt;p>I realized the diligence of people in India firsthand. I must follow your example and keep up with you all! And I&amp;rsquo;d love to go to other community events like &lt;a href="http://www.jaipurdevfest.com/">JDF&lt;/a>, &lt;a href="http://hyderabadtrailblazin.com/">Hyderabad Trailblazin&amp;rsquo;&lt;/a>, and local user groups too. I need more time to spend in this wonderful country.&lt;/p>
+&lt;p>See you next year!&lt;/p></description></item><item><title>Google Chrome Extension to Copy Trailhead Quiz Easily</title><link>https://shunkosa.github.io/posts/trailhead-quiz-chrome-extension/</link><pubDate>Mon, 30 Jul 2018 23:22:48 +0900</pubDate><guid>https://shunkosa.github.io/posts/trailhead-quiz-chrome-extension/</guid><description>&lt;p>Recently I created a simple chrome extension which shows Trailhead quiz in a plain text format. You can easily copy and paste Trailhead quiz by this extension.&lt;/p>
+&lt;p>&lt;img src="../img/20180730_1.png" alt="">&lt;/p>
+&lt;p>The extension is &lt;a href="https://chrome.google.com/webstore/detail/trailhead-quiz-extractor/jjnkbikhfkdfjbgleofnnelcgclcndln">available at Chrome Webstore&lt;/a>.&lt;/p>
+&lt;p>Have fun and blaze your trail!&lt;/p></description></item><item><title>Recreate Modal Component for force:lightningQuickActionWithoutHeader</title><link>https://shunkosa.github.io/posts/recreate-modal-lightning-action/</link><pubDate>Tue, 12 Dec 2017 21:18:40 +0900</pubDate><guid>https://shunkosa.github.io/posts/recreate-modal-lightning-action/</guid><description>&lt;h2 id="intro">Intro&lt;/h2>
+&lt;p>Lightning component action is a handy option to create custom function called from record detail page. We can launch a lightning component from a custom action by just implementing either &lt;code>force:lightningQuickAction&lt;/code> or &lt;code>force:lightningQuickActionWithoutHeader&lt;/code>. However, lightning component action has serious user interface problems. I will introduce them and propose a workaround.&lt;/p>
+&lt;h2 id="problems">Problems&lt;/h2>
+&lt;p>A component implemented force:lightningQuickAction is shown on the auto-created modal and its header and footer are outside of the component. So we can neither customize the header text nor put an another button next to the cancel button on the footer.
+&lt;img src="../img/20171212181307.png" alt="">&lt;/p>
+&lt;p>It&amp;rsquo;s a natural to think about recreating everything in a component implemented force:lightningQuickActionWithoutHeader. However, it has another problem. Extra margin is generated.
+&lt;img src="../img/20171212181318.png" alt="">&lt;/p>
+&lt;h2 id="workaround">Workaround&lt;/h2>
+&lt;p>&lt;strong>Notice: The following workaround is not compatible with Salesforce mobile and not available for API version 42.0 or later.&lt;/strong>&lt;/p>
+&lt;p>We can overwrite the style of the auto-created modal by inline CSS to disable extra margin. Another possibility is calling a custom modal from lightning:button tag but it requires you to recreate a highlight panel and it would be a tough work.&lt;/p>
+&lt;pre>&lt;code>.cuf-content{
+padding:0 !important;
+}
+.slds-p-around--medium{
+padding:0 !important;
+}
+.slds-modal__content{
+overflow-y:hidden !important;
+height:unset !important;
+max-height:unset !important;
+}
+&lt;/code>&lt;/pre>&lt;p>&lt;img src="../img/20171212181336.png" alt="">&lt;/p>
+&lt;p>Now we get a modal which is similar to standard action.
+&lt;img src="../img/20171212181350.png" alt="">&lt;/p>
+&lt;h2 id="reusable-component">Reusable component&lt;/h2>
+&lt;p>I created a template modal component which can be used in a component implemented force:lightningQuickActionWithoutHeader. It is available on &lt;a href="https://github.com/shunkosa/lightningaction-modal">this repository&lt;/a>.&lt;/p>
+&lt;h2 id="usage">Usage&lt;/h2>
+&lt;pre>&lt;code>&amp;lt;aura:component implements=&amp;quot;force:lightningQuickActionWithoutHeader&amp;quot;&amp;gt;
+&amp;lt;c:LightningActionModal title=&amp;quot;Hello world!&amp;quot; percentWidth=&amp;quot;85&amp;quot; bodyHeight=&amp;quot;300&amp;quot;&amp;gt;
+//awesome modal body
+&amp;lt;aura:set attribute=&amp;quot;footer&amp;quot;&amp;gt;
+&amp;lt;lightning:button label=&amp;quot;Cancel&amp;quot; variant=&amp;quot;neutral&amp;quot;/&amp;gt;
+&amp;lt;lightning:button label=&amp;quot;Save&amp;quot; variant=&amp;quot;brand&amp;quot; /&amp;gt;
+&amp;lt;/aura:set&amp;gt;
+&amp;lt;/c:LightningActionModal&amp;gt;
+&amp;lt;/aura:component&amp;gt;
+&lt;/code>&lt;/pre>&lt;h2 id="appendix">Appendix&lt;/h2>
+&lt;p>&lt;a href="https://salesforce.stackexchange.com/questions/160535/add-button-to-the-footer-of-a-lightning-quick-action-component">Add button to the footer of a Lightning Quick Action component - Salesforce Stack Exchange&lt;/a>&lt;/p></description></item></channel></rss>
