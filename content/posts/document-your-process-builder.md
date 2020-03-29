@@ -37,7 +37,7 @@ and then run,
 sfdx flowdoc:pdf:generate YOUR_PROCESS_API_NAME
 ```
 
-## What Happens in Background
+## Behind the Scenes
 This tool simply parses [Flow metadata](https://developer.salesforce.com/docs/atlas.en-us.api_meta.meta/api_meta/meta_visual_workflow.htm) and construct a object to generate pdf by [pdfmake](http://pdfmake.org/#/). For example, a criteria element in process builder is represented as `<decisions>` element in medatada.
 
 ![](../img/process_metadata_example.png)
