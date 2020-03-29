@@ -22,7 +22,7 @@
 &lt;pre>&lt;code>sfdx plugins:install sfdx-flowdoc-plugin
 &lt;/code>&lt;/pre>&lt;p>and then run,&lt;/p>
 &lt;pre>&lt;code>sfdx flowdoc:pdf:generate YOUR_PROCESS_API_NAME
-&lt;/code>&lt;/pre>&lt;h2 id="what-happens-in-background">What Happens in Background&lt;/h2>
+&lt;/code>&lt;/pre>&lt;h2 id="behind-the-scenes">Behind the Scenes&lt;/h2>
 &lt;p>This tool simply parses &lt;a href="https://developer.salesforce.com/docs/atlas.en-us.api_meta.meta/api_meta/meta_visual_workflow.htm">Flow metadata&lt;/a> and construct a object to generate pdf by &lt;a href="http://pdfmake.org/#/">pdfmake&lt;/a>. For example, a criteria element in process builder is represented as &lt;code>&amp;lt;decisions&amp;gt;&lt;/code> element in medatada.&lt;/p>
 &lt;p>&lt;img src="../img/process_metadata_example.png" alt="">&lt;/p>
 &lt;p>But &lt;code>&amp;lt;decisions&amp;gt;&lt;/code> represents not only criteria in process, but also evaluation of scheduled action, and of course decision in flow builder. That&amp;rsquo;s what I&amp;rsquo;m struggling to write abstract code.&lt;/p>
