@@ -46,5 +46,3 @@ But `<decisions>` represents not only criteria in process, but also evaluation o
 
 ## Next Step
 I'm working on the rest of process builder settings and flow builder settings. Your feedback is always welcomed!
-
-(この記事は Salesforce 開発者向けブログキャンペーンへのエントリー記事です。)
