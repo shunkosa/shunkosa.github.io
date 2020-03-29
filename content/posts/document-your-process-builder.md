@@ -42,7 +42,13 @@ This tool simply parses [Flow metadata](https://developer.salesforce.com/docs/at
 
 ![](../img/process_metadata_example.png)
 
+{{<gist shunkosa a07faf8ebf0012c2b4c92fbf79817e1f>}}
+
+You can see `<connector>` element and it refers to a next element like action or next criteria. Tracking this recursively, you can retrieve a sequence of action group elements.
+
 But `<decisions>` represents not only criteria in process, but also evaluation of scheduled action, and of course decision in flow builder. Now I write code only for displaying process builder settings, so further studies on flow metadata are needed to make this more abstract. 
 
 ## Next Step
 I'm working on the rest of process builder settings and flow builder settings. Your feedback is always welcomed!
+
+(この記事は Salesforce 開発者向けブログキャンペーンへのエントリー記事です。)
