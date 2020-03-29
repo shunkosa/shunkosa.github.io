@@ -1,7 +1,8 @@
 ---
 title: "Document Your Process Builder"
 date: 2020-03-27T00:49:35+09:00
-draft: true
+image: "posts/img/flowdoc.png"
+draft: false
 ---
 We often create various documents for deliverables, review, taking over, just an explanation to teammates, and so on. If the document is based on your Salesforce environment, you may create it automatically from the org to avoid maintaining both.
 
