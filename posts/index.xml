@@ -1,4 +1,34 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Shun Kosaka</title><link>https://shunkosa.github.io/posts/</link><description>Recent content in Posts on Shun Kosaka</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 29 Aug 2019 11:14:06 +0900</lastBuildDate><atom:link href="https://shunkosa.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Trailblazers in Korea</title><link>https://shunkosa.github.io/posts/trailblazers-in-korea/</link><pubDate>Thu, 29 Aug 2019 11:14:06 +0900</pubDate><guid>https://shunkosa.github.io/posts/trailblazers-in-korea/</guid><description>&lt;p>Two months ago, I visited Korea for a Salesforce customer success conference and 1st partner summit, and I was deeply impressed by their passion for community. Some trailblazer community groups there have just started and I felt like I should help with the diamond in the rough and grow up together.&lt;/p>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Shun Kosaka</title><link>https://shunkosa.github.io/posts/</link><description>Recent content in Posts on Shun Kosaka</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 27 Mar 2020 00:49:35 +0900</lastBuildDate><atom:link href="https://shunkosa.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Document Your Process Builder</title><link>https://shunkosa.github.io/posts/document-your-process-builder/</link><pubDate>Fri, 27 Mar 2020 00:49:35 +0900</pubDate><guid>https://shunkosa.github.io/posts/document-your-process-builder/</guid><description>&lt;p>We often create various documents for deliverables, review, taking over, just an explanation to teammates, and so on. If the document is based on your Salesforce environment, you may create it automatically from the org to avoid maintaining both.&lt;/p>
+&lt;p>For example, the followings are popular tools to export Salesforce settings including object fields definition.&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://chrome.google.com/webstore/detail/salesforce-devtools/ehgmhinnhggigkogkbhnbodhbfjgncjf">Salesforce DevTools&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/nyasba/docforce2">docforce2&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>And some companies may have their own tools internally.&lt;/p>
+&lt;p>So, how about Lightning Flow? &lt;a href="https://success.salesforce.com/ideaView?id=08730000000DmiPAAS">This idea&lt;/a> has more than 3k points but the metadata of lightning flow is complex and I cannot find any open source tools that supports it.&lt;/p>
+&lt;p>Not found? Just make it! As a prototype, I created the following tools to document process builder setting.&lt;/p>
+&lt;figure>
+&lt;img src="https://github.com/shunkosa/sfdx-flowdoc-plugin/raw/master/img/screenshot.png" width="100%"/>
+&lt;/figure>
+&lt;ul>
+&lt;li>&lt;a href="https://flowdoc.herokuapp.com">Flowdoc Web App&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.github.com/shunkosa/sfdx-flowdoc-plugin">Flowdoc Salesforce CLI Extension&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="web-app">Web App&lt;/h2>
+&lt;p>Connect your org and click the download icon of the flow you want to export. PDF file will open in another browser tab. Currently this tool supports trigger-based process builder only. (And unfortunately it still doesn&amp;rsquo;t support all the process builder settings.)&lt;/p>
+&lt;p>&lt;img src="../img/flowdoc_screenshot.png" alt="">&lt;/p>
+&lt;h2 id="cli-extension">CLI Extension&lt;/h2>
+&lt;p>Install the plugin&lt;/p>
+&lt;pre>&lt;code>sfdx plugins:install sfdx-flowdoc-plugin
+&lt;/code>&lt;/pre>&lt;p>and then run,&lt;/p>
+&lt;pre>&lt;code>sfdx flowdoc:pdf:generate YOUR_PROCESS_API_NAME
+&lt;/code>&lt;/pre>&lt;h2 id="what-happens-in-background">What Happens in Background&lt;/h2>
+&lt;p>This tool simply parses &lt;a href="https://developer.salesforce.com/docs/atlas.en-us.api_meta.meta/api_meta/meta_visual_workflow.htm">Flow metadata&lt;/a> and construct a object to generate pdf by &lt;a href="http://pdfmake.org/#/">pdfmake&lt;/a>. For example, a criteria element in process builder is represented as &lt;code>&amp;lt;decisions&amp;gt;&lt;/code> element in medatada.&lt;/p>
+&lt;p>&lt;img src="../img/process_metadata_example.png" alt="">&lt;/p>
+&lt;p>But &lt;code>&amp;lt;decisions&amp;gt;&lt;/code> represents not only criteria in process, but also evaluation of scheduled action, and of course decision in flow builder. That&amp;rsquo;s what I&amp;rsquo;m struggling to write abstract code.&lt;/p>
+&lt;h2 id="next-step">Next Step&lt;/h2>
+&lt;p>I&amp;rsquo;m working on the rest of process builder settings and flow builder settings. Your feedback is always welcomed!&lt;/p>
+&lt;p>(この記事は Salesforce 開発者向けブログキャンペーンへのエントリー記事です。)&lt;/p></description></item><item><title>Trailblazers in Korea</title><link>https://shunkosa.github.io/posts/trailblazers-in-korea/</link><pubDate>Thu, 29 Aug 2019 11:14:06 +0900</pubDate><guid>https://shunkosa.github.io/posts/trailblazers-in-korea/</guid><description>&lt;p>Two months ago, I visited Korea for a Salesforce customer success conference and 1st partner summit, and I was deeply impressed by their passion for community. Some trailblazer community groups there have just started and I felt like I should help with the diamond in the rough and grow up together.&lt;/p>
 &lt;p>&lt;figure>
 &lt;img src="../img/20190828_1.jpg" width="50%"/> &lt;figcaption>
 &lt;h4>Lunch with traiblazers in Korea&lt;/h4>
