@@ -42,7 +42,7 @@ This tool simply parses [Flow metadata](https://developer.salesforce.com/docs/at
 
 ![](../img/process_metadata_example.png)
 
-But `<decisions>` represents not only criteria in process, but also evaluation of scheduled action, and of course decision in flow builder. That's what I'm struggling to write abstract code.
+But `<decisions>` represents not only criteria in process, but also evaluation of scheduled action, and of course decision in flow builder. Now I write code only for displaying process builder settings, so further studies on flow metadata are needed to make this more abstract. 
 
 ## Next Step
 I'm working on the rest of process builder settings and flow builder settings. Your feedback is always welcomed!
