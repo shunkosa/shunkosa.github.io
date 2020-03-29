@@ -2,6 +2,7 @@ baseURL = "https://shunkosa.github.io/"
 languageCode = "en-us"
 title = "Shun Kosaka"
 theme = "koa"
+disqusShortname = "shunkosa"
 
 [params]
  subtitle = "Tsurezuregusa on Salesforce and technology"
