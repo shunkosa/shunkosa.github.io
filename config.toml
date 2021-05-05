@@ -6,6 +6,7 @@ disqusShortname = "shunkosa"
 
 [params]
  subtitle = "Tsurezuregusa on Salesforce and technology"
+ navigation = ["about.md", "archives.md"]
 
 [author]
  twitter = "shunkosa"
