@@ -7,8 +7,7 @@
 &lt;p>And some companies may have their own tools internally.&lt;/p>
 &lt;p>So, how about Lightning Flow? &lt;a href="https://success.salesforce.com/ideaView?id=08730000000DmiPAAS">This idea&lt;/a> has more than 3k points but the metadata of lightning flow is complex and I cannot find any open source tools that supports it.&lt;/p>
 &lt;p>Not found? Just make it! As a prototype, I created the following tools to document process builder setting.&lt;/p>
-&lt;figure>
-&lt;img src="https://github.com/shunkosa/sfdx-flowdoc-plugin/raw/master/img/screenshot.png" width="100%"/>
+&lt;figure>&lt;img src="https://github.com/shunkosa/sfdx-flowdoc-plugin/raw/master/img/screenshot.png" width="100%"/>
 &lt;/figure>
 &lt;ul>
 &lt;li>&lt;a href="https://flowdoc.herokuapp.com">Flowdoc Web App&lt;/a>&lt;/li>
@@ -31,13 +30,11 @@
 &lt;h2 id="next-step">Next Step&lt;/h2>
 &lt;p>I&amp;rsquo;m working on the rest of process builder settings and flow builder settings. Your feedback is always welcomed!&lt;/p>
 &lt;p>(この記事は Salesforce 開発者向けブログキャンペーンへのエントリー記事です。)&lt;/p></description></item><item><title>Trailblazers in Korea</title><link>https://shunkosa.github.io/posts/trailblazers-in-korea/</link><pubDate>Thu, 29 Aug 2019 11:14:06 +0900</pubDate><guid>https://shunkosa.github.io/posts/trailblazers-in-korea/</guid><description>&lt;p>Two months ago, I visited Korea for a Salesforce customer success conference and 1st partner summit, and I was deeply impressed by their passion for community. Some trailblazer community groups there have just started and I felt like I should help with the diamond in the rough and grow up together.&lt;/p>
-&lt;p>&lt;figure>
-&lt;img src="../img/20190828_1.jpg" width="50%"/> &lt;figcaption>
+&lt;p>&lt;figure>&lt;img src="../img/20190828_1.jpg" width="50%"/>&lt;figcaption>
 &lt;h4>Lunch with traiblazers in Korea&lt;/h4>
 &lt;/figcaption>
 &lt;/figure>
-&lt;figure>
-&lt;img src="../img/20190828_2.jpg" width="50%"/> &lt;figcaption>
+&lt;figure>&lt;img src="../img/20190828_2.jpg" width="50%"/>&lt;figcaption>
 &lt;h4>At the Partner Summit&lt;/h4>
 &lt;/figcaption>
 &lt;/figure>
@@ -46,7 +43,7 @@
 &lt;p>7 trailblazers shared their success stories. They use various products and have resolved various issues. After finished, I noticed that my note had over 300 lines.&lt;/p>
 &lt;p>I reaffirmed that Salesforce was not a panacea though it&amp;rsquo;s a great product. We need to face to face with the business and technical issues in sincerity, and keep the conversations going with stakeholders, users, and customers, no matter what role you&amp;rsquo;re in. The speakers have been doing so. Through the event, I saw their tenacious and steady efforts, which are not much covered in &lt;a href="https://www.youtube.com/watch?v=Lbzt2e0fTMo&amp;amp;list=PL_zETKbWKRwSrb29Cb8eda-Dh3m9kLbCq">the beautiful official videos&lt;/a>. That&amp;rsquo;s why I empathize with their stories.&lt;/p>
 &lt;p>It was so hard for me to vote. Imagine you are in a luxury restaurant and all of the menus are your favorite. Essentially we cannot compare the stories. But from the view of an attendee who was also engaged in the competition in Japan, I found their stories were no less wonderful than those in Japan.&lt;/p>
-&lt;blockquote class="twitter-tweet">&lt;p lang="en" dir="ltr">All done with happy. Thank you for share your story and your voice to us. I am so lucky I was able to be with you guys. &lt;a href="https://twitter.com/salesforce?ref_src=twsrc%5Etfw">@salesforce&lt;/a> &lt;a href="https://twitter.com/sarahahn20?ref_src=twsrc%5Etfw">@sarahahn20&lt;/a> &lt;a href="https://twitter.com/akikobannai?ref_src=twsrc%5Etfw">@akikobannai&lt;/a> &lt;a href="https://t.co/xIyCeaxQ8G">pic.twitter.com/xIyCeaxQ8G&lt;/a>&lt;/p>&amp;mdash; Sanghyeon Hong (@to_gomsk) &lt;a href="https://twitter.com/to_gomsk/status/1166706386668941312?ref_src=twsrc%5Etfw">August 28, 2019&lt;/a>&lt;/blockquote>
+&lt;blockquote class="twitter-tweet">&lt;p lang="en" dir="ltr">All done with happy. Thank you for share your story and your voice to us. I am so lucky I was able to be with you guys. &lt;a href="https://twitter.com/salesforce?ref_src=twsrc%5Etfw">@salesforce&lt;/a> &lt;a href="https://twitter.com/sarahahn20?ref_src=twsrc%5Etfw">@sarahahn20&lt;/a> &lt;a href="https://twitter.com/akikobannai?ref_src=twsrc%5Etfw">@akikobannai&lt;/a> &lt;a href="https://t.co/xIyCeaxQ8G">pic.twitter.com/xIyCeaxQ8G&lt;/a>&lt;/p>&amp;mdash; David Sanghyeon Hong (@to_gomsk) &lt;a href="https://twitter.com/to_gomsk/status/1166706386668941312?ref_src=twsrc%5Etfw">August 28, 2019&lt;/a>&lt;/blockquote>
 &lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8">&lt;/script>
 &lt;p>Huge congratulations, Sarah and Ruby! And thank you so much ALL of the speakers for taking your time and sharing your stories. I can imagine how hard to prepare and how nervous you felt before the presentation.&lt;/p>
 &lt;p>If you want to meet passionate trailblazers and have reasonable and delicious local foods, I strongly recommend that you visit Korea. My next plan is to visit Salesforce Saturday Seoul.&lt;/p>
@@ -81,15 +78,13 @@
 &lt;p>Now you can easily and effectively review the pull request using the scratch org automatically created and tested.&lt;/p>
 &lt;p>Next step is to delete the scratch org after the pull request is merged/closed. We need to store the org username somehow.&lt;/p>
 &lt;p>I like GitHub Actions from many views. Tightly-coupled with the repository (infinite possibilities to integrate with the repository!). Concurrency. Supporting multiple OS. Various 3rd party actions.&lt;/p>
-&lt;p>I hope more and more Salesforce developers try GitHub Actions. Share if you create an awesome action!&lt;/p></description></item><item><title>My #IndiaDreamin18 Highlights</title><link>https://shunkosa.github.io/posts/my-indiadreamin18-highlights/</link><pubDate>Sat, 08 Dec 2018 19:30:59 +0900</pubDate><guid>https://shunkosa.github.io/posts/my-indiadreamin18-highlights/</guid><description>&lt;p>I&amp;rsquo;ve wanted to visit India because actually I really like Indian dishes and I&amp;rsquo;m interested in the culture and people in this rapidly-growing country. After I chatted with my friends Amy and Paarth in twitter and talked with India Dreamin&amp;rsquo; organizer Vinay at MVP party in DF18, I made up my mind. This was the first time for me to attend overseas community driven event.&lt;/p>
-&lt;p>&lt;a href="http://indiadreamin.in">India Dreamin&amp;rsquo;&lt;/a> is one of the largest community driven event globally. About 1,800 trailblazers attended. The venue is the organizer&amp;rsquo;s alma mater, G.L. Bajaj, Noida.&lt;/p>
-&lt;p>&lt;figure>
-&lt;img src="../img/20181201_1.jpg" width="50%"/> &lt;figcaption>
+&lt;p>I hope more and more Salesforce developers try GitHub Actions. Share if you create an awesome action!&lt;/p></description></item><item><title>My #IndiaDreamin18 Highlights</title><link>https://shunkosa.github.io/posts/my-indiadreamin18-highlights/</link><pubDate>Sat, 08 Dec 2018 19:30:59 +0900</pubDate><guid>https://shunkosa.github.io/posts/my-indiadreamin18-highlights/</guid><description>&lt;p>I&amp;rsquo;ve wanted to visit India because actually I really like Indian dishes and I&amp;rsquo;m interested in the culture and people in this rapidly-growing country. After I chatted with my friends Amy and Paarth in twitter and talked with India Dreamin' organizer Vinay at MVP party in DF18, I made up my mind. This was the first time for me to attend overseas community driven event.&lt;/p>
+&lt;p>&lt;a href="http://indiadreamin.in">India Dreamin'&lt;/a> is one of the largest community driven event globally. About 1,800 trailblazers attended. The venue is the organizer&amp;rsquo;s alma mater, G.L. Bajaj, Noida.&lt;/p>
+&lt;p>&lt;figure>&lt;img src="../img/20181201_1.jpg" width="50%"/>&lt;figcaption>
 &lt;h4>Lively Expo!&lt;/h4>
 &lt;/figcaption>
 &lt;/figure>
-&lt;figure>
-&lt;img src="../img/20181201_2.jpg" width="50%"/> &lt;figcaption>
+&lt;figure>&lt;img src="../img/20181201_2.jpg" width="50%"/>&lt;figcaption>
 &lt;h4>Biggest Hall in the venue, Ganga Hall&lt;/h4>
 &lt;/figcaption>
 &lt;/figure>
@@ -107,21 +102,19 @@ And WIT Panels. A lot of attendees were inspired and encouraged by your leadersh
 &lt;blockquote class="twitter-tweet">&lt;p lang="en" dir="ltr">The passion for Community shown during &lt;a href="https://twitter.com/shunkosa?ref_src=twsrc%5Etfw">@shunkosa&lt;/a> Session “How Japan &lt;a href="https://twitter.com/hashtag/Trailblazer?src=hash&amp;amp;ref_src=twsrc%5Etfw">#Trailblazer&lt;/a> Community Changed My Career” had us all Smiling🤗🤗🤗 &lt;br>Great Job my friend🙌🏽❤️🙌🏽 “Someone who gives everything, will get true everything at the end.” 🇯🇵 &lt;a href="https://twitter.com/hashtag/Tokyo?src=hash&amp;amp;ref_src=twsrc%5Etfw">#Tokyo&lt;/a> &lt;a href="https://twitter.com/hashtag/SalesforceSaturday?src=hash&amp;amp;ref_src=twsrc%5Etfw">#SalesforceSaturday&lt;/a> &lt;a href="https://twitter.com/hashtag/MenWhoLead?src=hash&amp;amp;ref_src=twsrc%5Etfw">#MenWhoLead&lt;/a> &lt;a href="https://t.co/g52tmhxNVg">pic.twitter.com/g52tmhxNVg&lt;/a>&lt;/p>&amp;mdash; Stephanie Herrera (@steph_herrera_) &lt;a href="https://twitter.com/steph_herrera_/status/1068937612709134338?ref_src=twsrc%5Etfw">December 1, 2018&lt;/a>&lt;/blockquote>
 &lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8">&lt;/script>
 &lt;/p>
-&lt;p>So, what is the difference between community driven event and official event like DF? I think one is the closeness of others. You can enjoy a lot of cultural differences. Different career journeys. Incredible car traffic in India and crazy rush hour in Japan trains. And the true meaning of &amp;ldquo;user group&amp;rdquo;. In Japan, it means busines user&amp;rdquo; group, so I first thought user group doesn&amp;rsquo;t contain developer group!&lt;/p>
+&lt;p>So, what is the difference between community driven event and official event like DF? I think one is the closeness of others. You can enjoy a lot of cultural differences. Different career journeys. Incredible car traffic in India and crazy rush hour in Japan trains. And the true meaning of &amp;ldquo;user group&amp;rdquo;. In Japan, it means busines user&amp;quot; group, so I first thought user group doesn&amp;rsquo;t contain developer group!&lt;/p>
 &lt;p>I met a lot of amazing people here. I can&amp;rsquo;t thank you enough for everyone. Organizer Shivanath and Vinay. All the sponsors. All the speakers. My Accenture friend Seema. All the trailblazers in India. I enjoyed every minute I spent with you.
-&lt;figure>
-&lt;img src="../img/20181202.jpg"/> &lt;figcaption>
+&lt;figure>&lt;img src="../img/20181202.jpg"/>&lt;figcaption>
 &lt;h4>#Ohana everwhere!&lt;/h4>
 &lt;/figcaption>
 &lt;/figure>
 And much kudos core-team members and volunteers! I heard you had prepared for over 6 months. I respect your dedication and thank you so much for your hospitality.
-&lt;figure>
-&lt;img src="../img/20181201_3.jpg" width="50%"/> &lt;figcaption>
+&lt;figure>&lt;img src="../img/20181201_3.jpg" width="50%"/>&lt;figcaption>
 &lt;h4>Excellent closing celemony on Day 1.&lt;/h4>
 &lt;/figcaption>
 &lt;/figure>
 &lt;/p>
-&lt;p>I realized the diligence of people in India firsthand. I must follow your example and keep up with you all! And I&amp;rsquo;d love to go to other community events like &lt;a href="http://www.jaipurdevfest.com/">JDF&lt;/a>, &lt;a href="http://hyderabadtrailblazin.com/">Hyderabad Trailblazin&amp;rsquo;&lt;/a>, and local user groups too. I need more time to spend in this wonderful country.&lt;/p>
+&lt;p>I realized the diligence of people in India firsthand. I must follow your example and keep up with you all! And I&amp;rsquo;d love to go to other community events like &lt;a href="http://www.jaipurdevfest.com/">JDF&lt;/a>, &lt;a href="http://hyderabadtrailblazin.com/">Hyderabad Trailblazin'&lt;/a>, and local user groups too. I need more time to spend in this wonderful country.&lt;/p>
 &lt;p>See you next year!&lt;/p></description></item><item><title>Google Chrome Extension to Copy Trailhead Quiz Easily</title><link>https://shunkosa.github.io/posts/trailhead-quiz-chrome-extension/</link><pubDate>Mon, 30 Jul 2018 23:22:48 +0900</pubDate><guid>https://shunkosa.github.io/posts/trailhead-quiz-chrome-extension/</guid><description>&lt;p>Recently I created a simple chrome extension which shows Trailhead quiz in a plain text format. You can easily copy and paste Trailhead quiz by this extension.&lt;/p>
 &lt;p>&lt;img src="../img/20180730_1.png" alt="">&lt;/p>
 &lt;p>The extension is &lt;a href="https://chrome.google.com/webstore/detail/trailhead-quiz-extractor/jjnkbikhfkdfjbgleofnnelcgclcndln">available at Chrome Webstore&lt;/a>.&lt;/p>

@@ -1,1 +1,29 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Shun Kosaka</title><link>https://shunkosa.github.io/</link><description>Recent content on Shun Kosaka</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 04 Nov 2018 22:58:12 +0900</lastBuildDate><atom:link href="https://shunkosa.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Posts</title><link>https://shunkosa.github.io/posts/</link><pubDate>Fri, 27 Mar 2020 00:49:35 +0900</pubDate><guid>https://shunkosa.github.io/posts/</guid><description/></item><item><title>Archives</title><link>https://shunkosa.github.io/archives/</link><pubDate>Sun, 04 Nov 2018 22:58:12 +0900</pubDate><guid>https://shunkosa.github.io/archives/</guid><description/></item></channel></rss>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Shun Kosaka</title><link>https://shunkosa.github.io/</link><description>Recent content on Shun Kosaka</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 27 Mar 2020 00:49:35 +0900</lastBuildDate><atom:link href="https://shunkosa.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Posts</title><link>https://shunkosa.github.io/posts/</link><pubDate>Fri, 27 Mar 2020 00:49:35 +0900</pubDate><guid>https://shunkosa.github.io/posts/</guid><description/></item><item><title>Archives</title><link>https://shunkosa.github.io/archives/</link><pubDate>Sun, 04 Nov 2018 22:58:12 +0900</pubDate><guid>https://shunkosa.github.io/archives/</guid><description/></item><item><title>About</title><link>https://shunkosa.github.io/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://shunkosa.github.io/about/</guid><description>&lt;p>I&amp;rsquo;m a Salesforce Certified Technical Architect working in Accenture Japan. Over the years I&amp;rsquo;ve committed the clients' digital transformation for sectors like Financial Service, Retail, Utility, Telecommunication, Manufacturing, and so on. Expertise in general enterprise integration and Service Cloud implementation. I like two things the most, helping people and solving problems! I&amp;rsquo;ve learned a lot from you and trailblazer community, so I&amp;rsquo;m always looking for chances to giving back to the community😉&lt;/p>
+&lt;h2 id="community-activities">Community Activities&lt;/h2>
+&lt;p>I&amp;rsquo;m organizing:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://www.japandreamin.com/">Japan Dreamin'&lt;/a>&lt;/li>
+&lt;li>Salesforce Architects Meetup Tokyo&lt;/li>
+&lt;li>Salesforce Saturday Tokyo&lt;/li>
+&lt;li>Japan Service Cloud Trailblazers&lt;/li>
+&lt;/ul>
+&lt;h2 id="open-source-works">Open Source Works&lt;/h2>
+&lt;ul>
+&lt;li>Localization
+&lt;ul>
+&lt;li>&lt;a href="https://shunkosa.gitbook.io/trailhead-superbadge-jp/">Superbadges&lt;/a>&lt;/li>
+&lt;li>Developer Guide of Salesforce Extension for VS Code&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="https://shunkosa.github.io/lightning-flow-recipes-jp/">Salesforce Flow Recipes&lt;/a>&lt;/li>
+&lt;li>Salesforce CLI Plugins&lt;/li>
+&lt;li>&lt;a href="https://github.com/SFDO-Community-Sprints/GrassRootsMobileSurveyApp">Grassroots Mobile App&lt;/a> (part of Salesforce.org Open Source Commons)&lt;/li>
+&lt;/ul>
+&lt;p>See details at &lt;a href="https://www.github.com/shunkosa">GitHub&lt;/a>&lt;/p>
+&lt;h2 id="you-can-also-find-me-at">You Can Also Find Me at&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://trailblazer.me/id/shunkosa">Trailblazer Community&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.twitter.com/shunkosa/">Twitter&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://qiita.com/shunkosa">Qiita&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://speakerdeck.com/shunkosa">SpeakerDeck&lt;/a>&lt;/li>
+&lt;/ul></description></item></channel></rss>
