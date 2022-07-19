@@ -18,9 +18,9 @@
 &lt;p>&lt;img src="../img/flowdoc_screenshot.png" alt="">&lt;/p>
 &lt;h2 id="cli-extension">CLI Extension&lt;/h2>
 &lt;p>Install the plugin&lt;/p>
-&lt;pre>&lt;code>sfdx plugins:install sfdx-flowdoc-plugin
+&lt;pre tabindex="0">&lt;code>sfdx plugins:install sfdx-flowdoc-plugin
 &lt;/code>&lt;/pre>&lt;p>and then run,&lt;/p>
-&lt;pre>&lt;code>sfdx flowdoc:pdf:generate YOUR_PROCESS_API_NAME
+&lt;pre tabindex="0">&lt;code>sfdx flowdoc:pdf:generate YOUR_PROCESS_API_NAME
 &lt;/code>&lt;/pre>&lt;h2 id="behind-the-scenes">Behind the Scenes&lt;/h2>
 &lt;p>This tool simply parses &lt;a href="https://developer.salesforce.com/docs/atlas.en-us.api_meta.meta/api_meta/meta_visual_workflow.htm">Flow metadata&lt;/a> and construct a object to generate pdf by &lt;a href="http://pdfmake.org/#/">pdfmake&lt;/a>. For example, a criteria element in process builder is represented as &lt;code>&amp;lt;decisions&amp;gt;&lt;/code> element in medatada.&lt;/p>
 &lt;p>&lt;img src="../img/process_metadata_example.png" alt="">&lt;/p>
@@ -78,8 +78,8 @@
 &lt;p>Now you can easily and effectively review the pull request using the scratch org automatically created and tested.&lt;/p>
 &lt;p>Next step is to delete the scratch org after the pull request is merged/closed. We need to store the org username somehow.&lt;/p>
 &lt;p>I like GitHub Actions from many views. Tightly-coupled with the repository (infinite possibilities to integrate with the repository!). Concurrency. Supporting multiple OS. Various 3rd party actions.&lt;/p>
-&lt;p>I hope more and more Salesforce developers try GitHub Actions. Share if you create an awesome action!&lt;/p></description></item><item><title>My #IndiaDreamin18 Highlights</title><link>https://shunkosa.github.io/posts/my-indiadreamin18-highlights/</link><pubDate>Sat, 08 Dec 2018 19:30:59 +0900</pubDate><guid>https://shunkosa.github.io/posts/my-indiadreamin18-highlights/</guid><description>&lt;p>I&amp;rsquo;ve wanted to visit India because actually I really like Indian dishes and I&amp;rsquo;m interested in the culture and people in this rapidly-growing country. After I chatted with my friends Amy and Paarth in twitter and talked with India Dreamin' organizer Vinay at MVP party in DF18, I made up my mind. This was the first time for me to attend overseas community driven event.&lt;/p>
-&lt;p>&lt;a href="http://indiadreamin.in">India Dreamin'&lt;/a> is one of the largest community driven event globally. About 1,800 trailblazers attended. The venue is the organizer&amp;rsquo;s alma mater, G.L. Bajaj, Noida.&lt;/p>
+&lt;p>I hope more and more Salesforce developers try GitHub Actions. Share if you create an awesome action!&lt;/p></description></item><item><title>My #IndiaDreamin18 Highlights</title><link>https://shunkosa.github.io/posts/my-indiadreamin18-highlights/</link><pubDate>Sat, 08 Dec 2018 19:30:59 +0900</pubDate><guid>https://shunkosa.github.io/posts/my-indiadreamin18-highlights/</guid><description>&lt;p>I&amp;rsquo;ve wanted to visit India because actually I really like Indian dishes and I&amp;rsquo;m interested in the culture and people in this rapidly-growing country. After I chatted with my friends Amy and Paarth in twitter and talked with India Dreamin&amp;rsquo; organizer Vinay at MVP party in DF18, I made up my mind. This was the first time for me to attend overseas community driven event.&lt;/p>
+&lt;p>&lt;a href="http://indiadreamin.in">India Dreamin&amp;rsquo;&lt;/a> is one of the largest community driven event globally. About 1,800 trailblazers attended. The venue is the organizer&amp;rsquo;s alma mater, G.L. Bajaj, Noida.&lt;/p>
 &lt;p>&lt;figure>&lt;img src="../img/20181201_1.jpg" width="50%"/>&lt;figcaption>
 &lt;h4>Lively Expo!&lt;/h4>
 &lt;/figcaption>
@@ -114,7 +114,7 @@ And much kudos core-team members and volunteers! I heard you had prepared for ov
 &lt;/figcaption>
 &lt;/figure>
 &lt;/p>
-&lt;p>I realized the diligence of people in India firsthand. I must follow your example and keep up with you all! And I&amp;rsquo;d love to go to other community events like &lt;a href="http://www.jaipurdevfest.com/">JDF&lt;/a>, &lt;a href="http://hyderabadtrailblazin.com/">Hyderabad Trailblazin'&lt;/a>, and local user groups too. I need more time to spend in this wonderful country.&lt;/p>
+&lt;p>I realized the diligence of people in India firsthand. I must follow your example and keep up with you all! And I&amp;rsquo;d love to go to other community events like &lt;a href="http://www.jaipurdevfest.com/">JDF&lt;/a>, &lt;a href="http://hyderabadtrailblazin.com/">Hyderabad Trailblazin&amp;rsquo;&lt;/a>, and local user groups too. I need more time to spend in this wonderful country.&lt;/p>
 &lt;p>See you next year!&lt;/p></description></item><item><title>Google Chrome Extension to Copy Trailhead Quiz Easily</title><link>https://shunkosa.github.io/posts/trailhead-quiz-chrome-extension/</link><pubDate>Mon, 30 Jul 2018 23:22:48 +0900</pubDate><guid>https://shunkosa.github.io/posts/trailhead-quiz-chrome-extension/</guid><description>&lt;p>Recently I created a simple chrome extension which shows Trailhead quiz in a plain text format. You can easily copy and paste Trailhead quiz by this extension.&lt;/p>
 &lt;p>&lt;img src="../img/20180730_1.png" alt="">&lt;/p>
 &lt;p>The extension is &lt;a href="https://chrome.google.com/webstore/detail/trailhead-quiz-extractor/jjnkbikhfkdfjbgleofnnelcgclcndln">available at Chrome Webstore&lt;/a>.&lt;/p>
@@ -128,7 +128,7 @@ And much kudos core-team members and volunteers! I heard you had prepared for ov
 &lt;h2 id="workaround">Workaround&lt;/h2>
 &lt;p>&lt;strong>Notice: The following workaround is not compatible with Salesforce mobile and not available for API version 42.0 or later.&lt;/strong>&lt;/p>
 &lt;p>We can overwrite the style of the auto-created modal by inline CSS to disable extra margin. Another possibility is calling a custom modal from lightning:button tag but it requires you to recreate a highlight panel and it would be a tough work.&lt;/p>
-&lt;pre>&lt;code>.cuf-content{
+&lt;pre tabindex="0">&lt;code>.cuf-content{
 padding:0 !important;
 }
 .slds-p-around--medium{
@@ -145,12 +145,12 @@ max-height:unset !important;
 &lt;h2 id="reusable-component">Reusable component&lt;/h2>
 &lt;p>I created a template modal component which can be used in a component implemented force:lightningQuickActionWithoutHeader. It is available on &lt;a href="https://github.com/shunkosa/lightningaction-modal">this repository&lt;/a>.&lt;/p>
 &lt;h2 id="usage">Usage&lt;/h2>
-&lt;pre>&lt;code>&amp;lt;aura:component implements=&amp;quot;force:lightningQuickActionWithoutHeader&amp;quot;&amp;gt;
-&amp;lt;c:LightningActionModal title=&amp;quot;Hello world!&amp;quot; percentWidth=&amp;quot;85&amp;quot; bodyHeight=&amp;quot;300&amp;quot;&amp;gt;
+&lt;pre tabindex="0">&lt;code>&amp;lt;aura:component implements=&amp;#34;force:lightningQuickActionWithoutHeader&amp;#34;&amp;gt;
+&amp;lt;c:LightningActionModal title=&amp;#34;Hello world!&amp;#34; percentWidth=&amp;#34;85&amp;#34; bodyHeight=&amp;#34;300&amp;#34;&amp;gt;
 //awesome modal body
-&amp;lt;aura:set attribute=&amp;quot;footer&amp;quot;&amp;gt;
-&amp;lt;lightning:button label=&amp;quot;Cancel&amp;quot; variant=&amp;quot;neutral&amp;quot;/&amp;gt;
-&amp;lt;lightning:button label=&amp;quot;Save&amp;quot; variant=&amp;quot;brand&amp;quot; /&amp;gt;
+&amp;lt;aura:set attribute=&amp;#34;footer&amp;#34;&amp;gt;
+&amp;lt;lightning:button label=&amp;#34;Cancel&amp;#34; variant=&amp;#34;neutral&amp;#34;/&amp;gt;
+&amp;lt;lightning:button label=&amp;#34;Save&amp;#34; variant=&amp;#34;brand&amp;#34; /&amp;gt;
 &amp;lt;/aura:set&amp;gt;
 &amp;lt;/c:LightningActionModal&amp;gt;
 &amp;lt;/aura:component&amp;gt;
