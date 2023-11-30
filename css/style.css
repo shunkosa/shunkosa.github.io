@@ -181,9 +181,19 @@ div.social-icons a.none svg{
 		margin-top: 0.5em;
 		width: 100%;
 	}
+
+	div.site-navigation {
+		flex-grow: 1;
+		width: 100%;
+		padding-top: 1em;
+	}
 }
 
 @media screen and (min-width:768px) {
+	div.global-header {
+		flex-wrap: nowrap;
+	}
+	
 	div.social-icons {
 		max-width: 110px;
 	}
