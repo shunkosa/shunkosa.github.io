@@ -16,7 +16,7 @@ But big achievements take time. My volunteer in Salesforce.org community started
 
 When thinking about your career, there is a framework that considers three key words: Will/Can/Must (Should). "Will" is what you want to do, "Can" is what you can, and "Must (Should)" is what others expect you to do. It's important to get them right. Have you set up your "Will" to match your "Can"?  Are your actions in line with your "Must (Should)"? These elements will become clearer and bigger as you go outside of your shell. As you expand your own world, larger dream you have, more things you can, and more will be expected of you. Only you will be the point of contact with your outside world. And there it's also important to talk about your own experiences in your own words than to stick to theory. Others often get inspiration and insight from your experiences. 
 
-Many actions remain on my bucket list. What others have not yet done and what I want to do. The dilemma is that I cannot find enough time for community activities to prioritize family time and daily work, but the fact that I still have a long way to go inspires me.
+Many actions and plans remain on my bucket list. What others have not yet done and what I want to do with you. The dilemma is that I cannot find enough time for community activities to prioritize my family time and daily work, but the fact that I still have a long way to go inspires me.
 
 I believe everyone has desire to contribute to something. Take good care of that! Start today with the "outside of your shell" things you can do. It's the first step to your big "Will" and "Can".
 
