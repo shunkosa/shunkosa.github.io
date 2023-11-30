@@ -5,7 +5,7 @@ theme = "koa"
 disqusShortname = "shunkosa"
 
 [params]
- subtitle = "Tsurezuregusa on Salesforce and technology"
+ subtitle = "Things and thoughts about Salesforce and technology"
  navigation = ["about.md", "archives.md"]
 
 [author]
