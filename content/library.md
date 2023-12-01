@@ -12,6 +12,7 @@ title: "Library"
 * [Client Credentials OAuthフローと新しいライセンスで始めるシンプルなAPI連携](https://docs.google.com/presentation/d/1l9pIWeSbabllF362Q6uq_o0HzzXenQqlKyY-mPaECOI/edit?usp=sharing)
 
 ### 2022
+* [Experienceサイトのソーシャルサインオン 設定と仕組みを学ぼう](https://docs.google.com/presentation/d/1EfqmrMV2DhbTASxpBdCuRlKdJOuQa9X4B0grxhAh13Y/edit?usp=sharing) at Salesforce Architects Meetup Tokyo＃14
 * [Foodforceで世界のTrailblazersと繋がろう](https://docs.google.com/presentation/d/1Mo_v0rw83R9jY6F_iEBUzfZAwo4cSIBobsXMzUUK01w/edit?usp=sharing)
 * [コマンド一回でデータ移行！SFDMU プラグインを試そう](https://docs.google.com/presentation/d/19Yh6FkyluJA35OQ3eo5YWC9zSYM2t50s8NKaJnBm5ds/edit?usp=sharing)
 
