@@ -6,7 +6,7 @@ disqusShortname = "shunkosa"
 
 [params]
  subtitle = "Things and thoughts about Salesforce and technology"
- navigation = ["about.md", "archives.md"]
+ navigation = ["about.md", "archives.md", "library.md"]
 
 [author]
  twitter = "shunkosa"
