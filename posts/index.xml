@@ -50,7 +50,7 @@
 &lt;/code>&lt;/pre>&lt;h2 id="behind-the-scenes">Behind the Scenes&lt;/h2>
 &lt;p>This tool simply parses &lt;a href="https://developer.salesforce.com/docs/atlas.en-us.api_meta.meta/api_meta/meta_visual_workflow.htm">Flow metadata&lt;/a> and construct a object to generate pdf by &lt;a href="http://pdfmake.org/#/">pdfmake&lt;/a>. For example, a criteria element in process builder is represented as &lt;code>&amp;lt;decisions&amp;gt;&lt;/code> element in medatada.&lt;/p>
 &lt;p>&lt;img src="../img/process_metadata_example.png" alt="">&lt;/p>
-&lt;script type="application/javascript" src="https://gist.github.com/shunkosa/a07faf8ebf0012c2b4c92fbf79817e1f.js">&lt;/script>
+&lt;script src="https://gist.github.com/shunkosa/a07faf8ebf0012c2b4c92fbf79817e1f.js">&lt;/script>
 &lt;p>You can see &lt;code>&amp;lt;connector&amp;gt;&lt;/code> element and it refers to a next element like action or next criteria. Tracking this recursively, you can retrieve a sequence of action group elements.&lt;/p>
 &lt;p>But &lt;code>&amp;lt;decisions&amp;gt;&lt;/code> represents not only criteria in process, but also evaluation of scheduled action, and of course decision in flow builder. Now I write code only for displaying process builder settings, so further studies on flow metadata are needed to make this more abstract.&lt;/p>
 &lt;h2 id="next-step">Next Step&lt;/h2>
@@ -89,7 +89,7 @@
 &lt;p>&lt;img src="../img/20190825_2.png" alt="">&lt;/p>
 &lt;h2 id="define-workflow">Define workflow&lt;/h2>
 &lt;p>Define workflow in &lt;code>.github/workflows/main.yaml&lt;/code>. For more information about workflow syntax, see &lt;a href="https://help.github.com/en/articles/workflow-syntax-for-github-actions">Workflow Syntax for GitHub Actions&lt;/a>
-&lt;script type="application/javascript" src="https://gist.github.com/shunkosa/905d131a96d9c8619ae039529c040b20.js">&lt;/script>
+&lt;script src="https://gist.github.com/shunkosa/905d131a96d9c8619ae039529c040b20.js">&lt;/script>
 &lt;/p>
 &lt;h3 id="highlights">Highlights&lt;/h3>
 &lt;ul>
