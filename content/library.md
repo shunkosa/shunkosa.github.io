@@ -31,9 +31,3 @@ title: "Library"
 ### 2018
 * [30: Communities around the world](https://migration.fm/030/) at migration.fm
 
-## I sometimes make jokes...
-* https://twitter.com/shunkosa/status/1570296858148499458
-* https://twitter.com/shunkosa/status/1652975458135470080
-* https://twitter.com/shunkosa/status/1554266724895059968
-* https://twitter.com/shunkosa/status/1511641110019391491
-* https://twitter.com/shunkosa/status/1301479452161925120
