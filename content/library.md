@@ -23,7 +23,11 @@ title: "Library"
 
 ## Talks
 ### 2023
+* [Salesforce資格の最高峰取得者。世界に羽ばたくTrailblazer](https://www.salesforce.com/jp/blog/jp-achieved-highest-salesforce-qualification/)
 * [Foodforce Trailblazer Conversation Series](https://www.linkedin.com/feed/update/urn:li:activity:7135574836231196673/)
+
+### 2021
+* [【Trailblazer インタビュー】 Salesforceとの出会い、これまでの自分を形成したものとは？Part 1](https://www.salesforce.com/jp/blog/trailblazers-vol8/)
 
 ### 2020
 * [Lightning Champion Spotlight](https://admin.salesforce.com/blog/2020/lightning-champion-spotlight-shun-kosaka) at Salesforce Admins Podcast
