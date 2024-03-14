@@ -7,6 +7,7 @@ title: "Library"
 ## Presentations
 ### 2023
 * [はじめよう Salesforce Well-Architected](https://docs.google.com/presentation/d/1azqLov8l9sjdbWfeo-CF3-n_rC1r8bHt2-9vV8J_5bY/edit?usp=sharing) at Dreamforce 2023 Global Gathering Tokyo
+* [Architect Modular Solutions](../posts/img/df23.png) at Dreamforce 2023
 * [セキュリティを高めるApex最新機能とコード品質を高める開発プロセス](https://drive.google.com/drive/folders/1s-9uMTzcS94qObx3dKYU4aKeZqQvPk0S?ths=true) at Salesforce World Tour Tokyo 2021/07
   * See also [Apex でユーザモードでデータベースを操作する](https://qiita.com/shunkosa/items/1a1bbe25165d19b6d510)
 * [Client Credentials OAuthフローと新しいライセンスで始めるシンプルなAPI連携](https://docs.google.com/presentation/d/1l9pIWeSbabllF362Q6uq_o0HzzXenQqlKyY-mPaECOI/edit?usp=sharing)
