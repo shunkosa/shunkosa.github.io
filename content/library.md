@@ -5,6 +5,10 @@ title: "Library"
 資料の内容やデモに関するお問い合わせはお気軽に [@shunkosa](https://www.twitter.com/shunkosa) または shun at fastmail.com までご連絡ください。Feel free to ping me at X(Twitter) or email if you want to know details of the following contents.
 
 ## Presentations
+### 2024
+* 信頼性の高い Salesforce ソリューションを構築しよう - Salesforce World Tour Tokyo 2024
+* Get Started with Salesforce Well-Architected - Seoul Dreamin' 2024
+
 ### 2023
 * [はじめよう Salesforce Well-Architected](https://docs.google.com/presentation/d/1azqLov8l9sjdbWfeo-CF3-n_rC1r8bHt2-9vV8J_5bY/edit?usp=sharing) at Dreamforce 2023 Global Gathering Tokyo
 * [Architect Modular Solutions](../posts/img/df23.png) at Dreamforce 2023
@@ -22,7 +26,7 @@ title: "Library"
 * [sfdx-git-deltaで差分デプロイを自動化する](https://docs.google.com/presentation/d/1GZjZnq_CFRB94Q81cUhgrC3GB6zExDwUbicvaUg3fNE/edit?usp=sharing)
 * [法人番号検索する画面ノーコードで作れちゃう説](https://docs.google.com/presentation/d/19cWOLP6Esvf-5rfhyNY6q0aLnANSZ5fBUAM4gJ0yrF8/edit?usp=sharing) at Umekitaforce 2021/07
 
-## Talks
+## Talks and Interviews
 ### 2023
 * [Salesforce資格の最高峰取得者。世界に羽ばたくTrailblazer](https://www.salesforce.com/jp/blog/jp-achieved-highest-salesforce-qualification/)
 * [Foodforce Trailblazer Conversation Series](https://www.linkedin.com/feed/update/urn:li:activity:7135574836231196673/)
